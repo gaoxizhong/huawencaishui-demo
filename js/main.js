@@ -117,34 +117,19 @@ $(function ($) {
 	
 	
 	// 我们的服务 初始化 第一个 状态
-	$('.accordionbox-item.curr').animate({
-		width: '4.32rem'
-	}, 'slow');
-	$('.accordionbox-item.curr .puAway-box').animate({
-		bottom: '-4.6rem'
-	}, 'slow');
+	$('.accordionbox-item').eq(0).stop().animate({width: '5.66rem'}, 'slow');
 	$('.accordionbox-item').hover(function() {
 		// 获取索引
 		var _index = $(this).index();
-	
-		$(this).addClass('curr')
-			.stop()
-			.animate({
-				width: '4.32rem'
-			}, 'slow')
-			.siblings()
-			.stop()
-			.animate({
-				width: '1.34rem'
-			}, 'slow')
-			.removeClass('curr');
-	
-		$(this).find('.puAway-box').stop().animate({
-			bottom: '-4.6rem'
-		}, 'slow').parent().siblings().find('.puAway-box').stop().animate({
-			bottom: '0'
-		}, 'slow');
-	
+		$(this).stop().animate({width: '5.66rem'}, 'slow')
+		$(this).siblings().stop().animate({width: '1.34rem'}, 'slow')
+		// $(this).addClass('curr').stop().animate({width: '5.66rem'}, 'slow')
+		// 	.siblings()
+		// 	.stop()
+		// 	.animate({
+		// 		width: '1.34rem'
+		// 	}, 'slow')
+		// 	.removeClass('curr');
 	}, function() {
 		//移出
 	
