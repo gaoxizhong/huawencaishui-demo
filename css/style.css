@@ -1382,6 +1382,7 @@ footer 结束
 .huawen-title-box{
 	width: 100%;
 	text-align: center;
+    margin-top: 0.5rem;
 }
 
 .huawen-title-box .titleText-t{
@@ -1411,92 +1412,277 @@ footer 结束
 	color: #333333;
 	line-height: 0.24rem;
 }
+.text-box{
+    margin-top: 0.5rem;
+    font-size: 0.18rem;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #333333;
+    line-height: 0.36rem;
+}
+.vido-box{
+    width: 11.2rem;
+    height: 6.3rem;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+    background-color: #030A16;
+}
+.culture-title-box{
+    display: flex;
+    -ms-display: flexbox;
+    align-items: center;
+    justify-content: center;
+    -ms-align-items: center;
+    -ms-justify-content: center;
+}
+.culture-title-box>div{
+    width: 5rem;
+    display: flex;
+    -ms-display: flexbox;
+    align-items: center;
+    -ms-align-items: center;
+    padding: 0 0.5rem;
+    margin: 0.6rem 0;
+}
+.culture-title-box>div:nth-of-type(1){
+    border-right: 1px solid #DDDDDD;
+}
+.culture-title-box>div img.titlebox-img{
+    width: 1.06rem;
+    height: 1.06rem;
+}
+.titlebox-text{
+    padding-left: 0.2rem;
+}
+.titlebox-text .titlebox-text1{
+    font-size: 0.26rem;
+    font-family: PingFangSC-Semibold, PingFang SC;
+    font-weight: 600;
+    color: #333333;
+    line-height: 0.37rem;
+}
+.titlebox-text span{
+    font-size: 0.18rem;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #333333;
+    line-height: 0.25rem;
+}
+.culture-bgbox{
+    width: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.culture-bgbox>img{
+    float: left;
+    width: 4.04rem;
+    height: 6.06rem;
+}
+.info-box{
+    margin: 0 -0.1rem;
+}
+.composition-box{
+    margin: 0.3rem -1.5rem 0;
+    display: flex;
+    -ms-display:flexbox;
+}
+.composition-box>div{
+    flex: 1;
+    padding-right: 0.02rem;
+}
+.composition-box>div:nth-of-type(4){
+    padding-right: 0;
+}
+.composition-box>div img{
+    width: 100%;
+    height: 3.32rem;
+}
+.t-60{
+    width: auto;
+    height: 0.6rem;
+    margin: 0 -1.5rem;
+    background: #F0F2F5;
+}
+.team-block-box{
+    padding-top: 0.6rem;
+}
+.team-block-items1{
+    width: 100%;
+    display: flex;
+    -ms-display:flexbox;
+}
+.team-block-items1>img{
+    width: 8rem;
+    height: 4.82rem;
+}
 
+.team-items1-info{
+    flex: 1;
+    padding-left: 1.26rem;
+}
+.team-items1-info .info-1{
+    color: rgba(51, 51, 51, 1);
+    font-size: 0.42rem;
+    font-family: PingFangSC-Regular;
+    white-space: nowrap;
+    line-height: 0.6rem;
+    text-align: left;
+}
+.team-items1-info .layer-1 {
+    width: 1rem;
+    height: 1px;
+    background-color: rgba(189, 138, 76, 1);
+    margin-top: 0.3rem;
+}
+.team-items1-info .word-1{
+    color: rgba(51, 51, 51, 1);
+    font-size: 0.36rem;
+    font-family: PingFangSC-Semibold;
+    white-space: nowrap;
+    line-height: 0.5rem;
+    text-align: left;
+    margin-top: 0.3rem;
+}
+.team-items1-info .paragraph-1 {
+    display: inline-block;
+    color: rgba(189, 138, 76, 1);
+    font-size: 0.2rem;
+    font-family: PingFangSC-Semibold;
+    line-height: 0.36rem;
+    text-align: left;
+    margin-top: 0.3rem;
+}
+.team-items1-info .word-2 {
+    display: inline-block;
+    color: rgba(51, 51, 51, 1);
+    font-size: 0.18rem;
+    font-family: PingFangSC-Regular;
+    line-height: 0.36rem;
+    text-align: left;
+    margin-top: 0.3rem;
+  }
+  .team-items2-box{
+    height: auto;
+    display: flex;
+    -ms-display: flexbox;
+    padding: 0 0.77rem;
+    margin: 0 -1.54rem;
+  }
+  .items2-box{
+    width: 2rem;
+    margin: 0.3rem 0.77rem;
+  }
+  .items2-box-img{
+    width: 2rem;
+    height: 2.5rem;
 
-
-
+  }
+  .items2-box-p1{
+    font-size: 0.18rem;
+    font-family: PingFangSC-Semibold, PingFang SC;
+    font-weight: 600;
+    color: #333333;
+    line-height: 0.25rem;
+    margin-top: 0.18rem;
+    text-align: center;
+  }
+  .items2-box-p2{
+    font-size: 0.14rem;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #666666;
+    line-height: 0.21rem;
+    text-align: center;
+    margin-top: 0.07rem;
+  }
+  .history-container{
+    width: 100%;
+    text-align: center;
+    margin-top: 0.6rem;
+  }
+  .history-container>img{
+    width: 5.38rem;
+    height: 22.7rem;
+  }
+  .qualificati-itemsbox{
+    width: 100%;
+    padding: 0.6rem 0.25rem 0.3rem;
+    margin: 0 -0.5rem;
+    display: flex;
+    -ms-display: flexbox;
+  }
+  .qualificati-list-items{
+    width: 2.8rem;
+    margin: 0 0.25rem;
+  }
+  .qualificati-list-items>img{
+    width: 2.8rem;
+    height: 1.68rem;
+  }
+  .qualificati-list-items>p{
+    margin-top: 0.3rem;
+    font-size: 0.17rem;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #333333;
+    line-height: 0.22rem;
+    text-align: center;
+  }
+  .song-bg-box{
+    width: 100%;
+    height: auto;
+  }
+  .song-bg-box>img{
+    width: 100%;
+    height: 9.16rem;
+  }
 /* ==================================================
 	关于我们结束
 ====================================================== */
 
-/* ====================================================
-5. Service Section Start
-======================================================= */
-
-.serviceDetails {
-    padding: 120px 0px 120px;
+/* ==================================================
+5. 服务领域开始
+====================================================== */
+.service-banner {
+	width: 100%;
+	height: 5.5rem;
+    background: url(../img/service/service-banner.png) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
 }
-
-.cpading-bottom {
-    padding-top: 23px;
+.service-info{
+	width: 100%;
+	background: #fff;
+	padding: 0 0 0.4rem;
 }
-
-.serviceDetails .content h2 {
-    color: #333;
-    text-transform: capitalize;
-    font-weight: 700;
-    margin-bottom: 15px;
-    font-size: 46px;
-    line-height: 50px;
+.service-tab-centent{
+	width: 100%;
+	padding: 0.2rem 1.5rem 0;
 }
-.serviceDetails .content p{
-    color: #616161;
-}
-.feature {
-    background: #f6f6f6;
-    padding: 110px 0px 78px;
-}
-
-.feature .sectionHeader {
-    margin-bottom: 58px;
-}
-
-
-.feature .box {
+.service-tab-centent .info-box .text-box{
+    font-size: 0.18rem;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #333333;
+    line-height: 0.32rem;
     text-align: center;
-    margin-bottom: 38px;
+    margin: 0.38rem auto 0.2rem;
+}
+.service-bg-box{
+    width: 100%;
+    height: auto;
+  }
+.service-bg-box>img{
+    width: 100%;
+    height: 4.2rem;
 }
 
-.feature .box i {
-    font-size: 40px;
-    color: #fff;
-    border-radius: 50%;
-    background-color: #0e3571;
-    width: 80px;
-    height: 80px;
-    text-align: center;
-    line-height: 80px;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-}
-.feature .box:hover i{
-    background-color: #9fde50;
-}
+/* ==================================================
+服务领域结束
+====================================================== */
 
-.feature .box h3 {
-    margin: 0;
-    color: #333;
-    font-size: 24px;
-    line-height: 34px;
-    font-weight: 600;
-    margin-top: 22px;
-    margin-bottom: 14px;
-    -webkit-transition: all .4s;
-    -o-transition: all .4s;
-    transition: all .4s;
-}
 
-.feature .box p {
-    font-size: 16px;
-    line-height: 26px;
-    color: #555;
-    margin: 0;
-}
-
-/* ====================================================
-5. Service Section End
-======================================================= */
 
 
 /* ============================================================

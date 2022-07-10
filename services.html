@@ -4,545 +4,218 @@
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!-->
 <html lang="zxx">
-<!--<![endif]-->
+	<!--<![endif]-->
 
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
-	<meta name="keywords" content="">
-	<meta name="description" content="">
-	<title>保险/投资/金融行业网站模板 | js代码（www.jsdaima.com）- IT资源下载平台</title>
-	<!--Favicon-->
-	<link rel="shortcut icon" type="image/png" href="img/favicon.png" />
-	<!--Bootstrap Stylesheet-->
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<!--Font Awesome Stylesheet-->
-	<link rel="stylesheet" type="text/css" href="css/fontawesome.all.min.css">
-	<link rel="stylesheet" type="text/css" href="css/pe-icon-7-stroke.css">
-	<link rel="stylesheet" type="text/css" href="css/helper.css">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+		<title>华文财税</title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<!--网站图标-->
+		<link rel="shortcut icon" type="image/png" href="./img/favicon.png" />
+		<!--Bootstrap -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<!--字体 样式-->
+		<link rel="stylesheet" type="text/css" href="css/fontawesome.all.min.css">
+		<link rel="stylesheet" type="text/css" href="css/pe-icon-7-stroke.css">
+		<link rel="stylesheet" type="text/css" href="css/helper.css">
+		<!-- 动画 -->
+		<link rel="stylesheet" type="text/css" href="css/animate.css">
+		<!--弹出框插件 -->
+		<link rel="stylesheet" type="text/css" href="css/venobox.css">
+		<!--轮播 banner-->
+		<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+		<link rel="stylesheet" type="text/css" href="css/owl.transitions.css">
+		<!--公共样式-->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!--响应样式 -->
+		<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	</head>
+	<script type="text/javascript">
+		(function() {
+			var whdef = 100 / 1920; // 表示1920的设计图,1rem == 100px 其他值都可以
+			// var wH = window.innerHeight;// 当前窗口的高度
+			var wW = window.innerWidth; // 当前窗口的宽度
+			var rem = wW * whdef; // 以默认比例值乘以当前窗口宽度,得到该宽度下的相应FONT-SIZE值
+			document.getElementsByTagName("html")[0].style.fontSize = rem + 'px'
+		})()
+	</script>
+	<body>
 
-	<!--Animate Stylesheet-->
-	<link rel="stylesheet" type="text/css" href="css/animate.css">
+		<!-- 头部导航 开始 -->
+		<header id="mainHeader" class="header">
+			<!-- Start Navigation -->
+			<nav class="navbar navbar-expand-lg navbar-light p-0">
+				<div class="container-fluid">
+					<a href="index.html">
+						<img src="img/logo.png" alt="" class="logo">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse"
+						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+						aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
 
-	<!--Venobox Stylesheet-->
-	<link rel="stylesheet" type="text/css" href="css/venobox.css">
-	<!--Owl carosul-->
-	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
-	<link rel="stylesheet" type="text/css" href="css/owl.transitions.css">
-	<!--Main Stylesheet-->
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<!--Responsive Stylesheet-->
-	<link rel="stylesheet" type="text/css" href="css/responsive.css">
-</head>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ml-auto">
+							<!-- <li class="nav-item active">
+							<a class="nav-link active" href="index.html">Home</a>
+						</li> -->
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="aboutUs" role="button"
+									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									关于我们
+								</a>
+								<div class="dropdown-menu" aria-labelledby="aboutUs">
+									<a class="dropdown-item" href="aboutUs.html">公司概况</a>
+									<a class="dropdown-item" href="aboutUs.html">管理团队</a>
+									<a class="dropdown-item" href="aboutUs.html">分支机构</a>
+									<a class="dropdown-item" href="aboutUs.html">发展历程</a>
+									<a class="dropdown-item" href="aboutUs.html">荣誉资质</a>
+									<a class="dropdown-item" href="aboutUs.html">华文之歌</a>
+								</div>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link" href="services.html">服务领域</a>
+							</li>
 
-<body>
-
-	<!-- Main Menu Area Start -->
-	<header id="mainHeader" class="header">
-		<!-- Start Navigation -->
-		<nav class="navbar navbar-expand-lg navbar-light p-0">
-			<div class="container">
-				<a class="navbar-brand" href="index.html">
-					<img src="img/logo.png" alt="">
-				</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-				 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item">
-							<a class="nav-link" href="index.html">Home</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="aboutUs.html">About</a>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle active" href="#" id="servicemenu" role="button" data-toggle="dropdown"
-							 aria-haspopup="true" aria-expanded="false">
-								Service
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="blog" role="button"
+									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									新闻中心
+								</a>
+								<div class="dropdown-menu" aria-labelledby="blog">
+									<a class="dropdown-item" href="blog.html">华文动态</a>
+									<a class="dropdown-item" href="blogDetails.html">华文下午茶</a>
+									<a class="dropdown-item" href="blogDetails.html">专业解读</a>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="contact.html">政策法规</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="contact.html">华文讲堂</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="contact.html">加入我们</a>
+							</li>
+						</ul>
+						<div class="call_btn">
+							<a href="#">
+								<i class="fas fa-phone"></i>
+								400-995-2686
 							</a>
-							<div class="dropdown-menu" aria-labelledby="servicemenu">
-								<a class="dropdown-item active" href="services.html">Service</a>
-								<a class="dropdown-item" href="lifeInsurance.html">Service Single</a>
-							</div>
-						</li>
-
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="blog" role="button" data-toggle="dropdown" aria-haspopup="true"
-							 aria-expanded="false">
-								Blog
-							</a>
-							<div class="dropdown-menu" aria-labelledby="blog">
-								<a class="dropdown-item" href="blog.html">Blog</a>
-								<a class="dropdown-item" href="blogDetails.html">Blog Details</a>
-							</div>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="pages" role="button" data-toggle="dropdown" aria-haspopup="true"
-							 aria-expanded="false">
-								Pages
-							</a>
-							<div class="dropdown-menu" aria-labelledby="pages">
-								<a class="dropdown-item" href="login.html">Login</a>
-								<a class="dropdown-item" href="register.html">Register</a>
-								<a class="dropdown-item" href="faq.html">Faq</a>
-								<a class="dropdown-item" href="404.html">404</a>
-							</div>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="contact.html">Contact</a>
-						</li>
-					</ul>
-					<div class="call_btn">
-						<a href="#">
-							<i class="fas fa-phone"></i>
-							get a call
-						</a>
-					</div>
-				</div>
-			</div>
-		</nav>
-	</header>
-	<!-- Main Menu Area End -->
-
-	<!-- banner Area Start -->
-	<section id="insuronbreadcrumb" class="insuronbreadcrumb">
-		<div class="bcoverlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="Content">
-						<h2>
-							Service
-						</h2>
-						<div class="links">
-							<ul>
-								<li>
-									<a href="index.html">Home</a>
-								</li>
-								<li>
-									<span>/</span>
-								</li>
-								<li>
-									<a class="active" href="services.html">Service</a>
-								</li>
-							</ul>
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Welcome Area End -->
+			</nav>
+		</header>
+		<!--头部导航 结束 -->
+		<!-- 背景区域 开始 -->
+		<section id="service-banner" class="service-banner"></section>	
+		<!--  背景区域 结束  -->
 
-	<!-- Services Area Start -->
-	<section id="service" class="service">
-			<div class="container">
+		<section class="service-info">
+			<div class="container-fluid">
+				<!-- 内容区域 开始 -->
 				<div class="row justify-content-center">
-					<div class="col-lg-8 col-md-10">
-						<div class="sectionHeader">
-							<h2>
-								Our Services
-							</h2>
-							
-							<p>
-								when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-								the book type of spaciman and scrambled it to make a type specimen book.
-							</p>
+					<div class="service-tab-centent">
+						<!-- 华协同的一体化管理 开始 -->
+						<div class="collaborate-integration">
+							<!-- 标题 开始 -->
+							<div class="huawen-title-box">
+								<div class="titleText-t">
+									<div class="header-xian"></div>
+									<div class="header-title">协同的一体化管理</div>
+									<div class="header-xian"></div>
+								</div>
+								<div class="eltitleText-t"></div>
+							</div>
+							<!-- 标题 结束 -->
+							<div class="info-box">
+								<div class="text-box">
+									河北华文财税咨询有限公司实现了一体化、距阵制管理专业服务机构，并已经初步形成“内部共享服务”的管理模式<br />执行标准化管理流程统一的业务管理、统一的执业标准、统一的信息化系统。
+								</div>
+							</div>
+							<div class="service-bg-box">
+								<img src="./img/service/service-bg1.png" alt="" />
+								<img src="./img/service/service-bg2.png" alt="" />
+								<img src="./img/service/service-bg3.png" alt="" />
+								<img src="./img/service/service-bg4.png" alt="" />
+							</div>
+
 						</div>
+						<!-- 协同的一体化管理 结束 -->
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-md-6">
-						<div class="box">
-							<div class="left">
-								<i class="pe-7s-home"></i>
-							</div>
-							<div class="right">
-								<div class="content">
-									<h5>
-											Home insurance
-									</h5>
-									<p>
-											When an unknown printer to hello to say
-											type and scrambled it make me happy and i love this.
-									</p>
-									<a href="lifeInsurance.html">
-											<i class="fas fa-caret-right"></i>
-											Read More
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="box">
-							<div class="left">
-								<i class="pe-7s-car"></i>
-							</div>
-							<div class="right">
-								<div class="content">
-									<h5>
-											Car insurance
-									</h5>
-									<p>
-											When an unknown printer to hello to say
-											type and scrambled it make me happy and i love this.
-									</p>
-									<a href="lifeInsurance.html">
-											<i class="fas fa-caret-right"></i>
-											Read More
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="box">
-							<div class="left">
-								<i class="pe-7s-like"></i>
-							</div>
-							<div class="right">
-								<div class="content">
-									<h5>
-											Life insurance
-									</h5>
-									<p>
-											When an unknown printer to hello to say
-											type and scrambled it make me happy and i love this.
-									</p>
-									<a href="lifeInsurance.html">
-											<i class="fas fa-caret-right"></i>
-											Read More
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="box">
-							<div class="left">
-								<i class="pe-7s-rocket"></i>
-							</div>
-							<div class="right">
-								<div class="content">
-									<h5>
-											Travel insurance
-									</h5>
-									<p>
-											When an unknown printer to hello to say
-											type and scrambled it make me happy and i love this.
-									</p>
-									<a href="lifeInsurance.html">
-											<i class="fas fa-caret-right"></i>
-											Read More
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+				<!-- 内容区域 结束 -->
+				
 			</div>
+			
 		</section>
-	<!-- Services Area End -->
 
-
-	<!-- Testimonial Area Start -->
-	<section id="testimonial" class="testimonial">
-		<div class="container">
-			<div class="row justify-content-between">
-				<div class="col-lg-5">
-					<div class="testimonialSlider owl-carousel">
-						<div class="single-testimonials">
-							<img src="img/testimonial/testi-icon-1.png" class="testi-icon" alt="Awesome Image">
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-								industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
-							<div class="name-box-wrapper">
-								<div class="img-box">
-									<img src="img/testimonial/reviewr1.jpg" alt="Awesome Image">
+		<!-- footer 开始 -->
+		<footer class="footer">
+			<div class="footer-info-box">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-6 col-xl-4">
+							<div class="footer-info-ulbox">
+								<div class="footer-links">
+									<a href="#">关于我们</a>
+									<ul>
+										<li><a href="#">华文动态</a></li>
+										<li><a href="#">华文下午茶</a></li>
+										<li><a href="#">行业动态</a></li>
+										<li><a href="#">财税政策</a></li>
+									</ul>
 								</div>
-								<div class="text-box">
-									<h4>Hailey Olkowski</h4>
-									<span>uihub, ui/ux designer</span>
-								</div>
-							</div>
-						</div>
-						<div class="single-testimonials">
-							<img src="img/testimonial/testi-icon-1.png" class="testi-icon" alt="Awesome Image">
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-								industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
-							<div class="name-box-wrapper">
-								<div class="img-box">
-									<img src="img/testimonial/reviewr2.jpg" alt="Awesome Image">
-								</div>
-								<div class="text-box">
-									<h4>Benny Talone</h4>
-									<span>uihub, ui/ux designer</span>
+								<div class="footer-links">
+									<a href="#">服务领域</a>
+									<ul>
+										<li><a href="#">会计审计</a></li>
+										<li><a href="#">税务咨询</a></li>
+										<li><a href="#">资产评估</a></li>
+										<li><a href="#">造价咨询</a></li>
+									</ul>
 								</div>
 							</div>
 						</div>
-						<div class="single-testimonials">
-							<img src="img/testimonial/testi-icon-1.png" class="testi-icon" alt="Awesome Image">
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-								industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
-							<div class="name-box-wrapper">
-								<div class="img-box">
-									<img src="img/testimonial/reviewr3.jpg" alt="Awesome Image">
+						<div class="col-sm-6 col-xl-4">
+							<div class="footer-logobox">
+								<a class="footer-logo" href="#"><img src="./img/logo-1.png" alt="logo" /></a>
+							</div>
+						</div>
+						<div class="col-sm-6 col-xl-4">
+							<div class="footer-telbox">
+								<div class="footer-telbox-top">
+									<img src="./img/icon-tel.png" />
+									<div class="footer-telbox-top-t">
+										<div class="telbox-top-text">全国服务热线</div>
+										<div class="telbox-top-num">400-955-2686</div>
+									</div>
 								</div>
-								<div class="text-box">
-									<h4>Rigoberto Sweat</h4>
-									<span>uihub, ui/ux designer</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="row partner-logo-wrapper">
-						<div class="col-4 remove-col-padding partner-logos">
-							<div class="single-logo-item">
-								<!-- single logo item -->
-								<a href="#">
-									<img class="img-fluid" src="img/patner/patner1.png" alt="partner image">
-								</a>
-							</div><!-- //.single logo item -->
-						</div>
-						<div class="col-4 remove-col-padding partner-logos">
-							<div class="single-logo-item">
-								<!-- single logo item -->
-								<a href="#">
-									<img class="img-fluid" src="img/patner/patner2.png" alt="partner image">
-								</a>
-							</div><!-- //.single logo item -->
-						</div>
-						<div class="col-4  remove-col-padding partner-logos">
-							<div class="single-logo-item">
-								<!-- single logo item -->
-								<a href="#">
-									<img class="img-fluid" src="img/patner/patner3.png" alt="partner image">
-								</a>
-							</div><!-- //.single logo item -->
-						</div>
-					</div>
-					<div class="row partner-logo-wrapper">
-						<div class="col-4 remove-col-padding partner-logos">
-							<div class="single-logo-item">
-								<!-- single logo item -->
-								<a href="#">
-									<img class="img-fluid" src="img/patner/patner4.png" alt="partner image">
-								</a>
-							</div><!-- //.single logo item -->
-						</div>
-						<div class="col-4 remove-col-padding partner-logos">
-							<div class="single-logo-item">
-								<!-- single logo item -->
-								<a href="#">
-									<img class="img-fluid" src="img/patner/patner5.png" alt="partner image">
-								</a>
-							</div><!-- //.single logo item -->
-						</div>
-						<div class="col-4 remove-col-padding partner-logos">
-							<div class="single-logo-item">
-								<!-- single logo item -->
-								<a href="#">
-									<img class="img-fluid" src="img/patner/patner6.png" alt="partner image">
-								</a>
-							</div><!-- //.single logo item -->
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Testimonial Area End -->
-
-	<!-- Counter Area Start -->
-	<section id="counter" class="counter">
-		<div class="container">
-			<div class="row">
-				<div class=" col-md-6 col-xl-3">
-					<div class="c-box">
-						<span class="count">1000</span><sup>+</sup>
-						<h3>Satisfy Clients</h3>
-					</div>
-				</div>
-				<div class=" col-md-6 col-xl-3">
-					<div class="c-box">
-						<span class="count">300</span><sup>+</sup>
-						<h3>Winning Awards</h3>
-					</div>
-				</div>
-				<div class=" col-md-6 col-xl-3">
-					<div class="c-box">
-						<span class="count">9999</span><sup>+</sup>
-						<h3>Lines Of Coding</h3>
-					</div>
-				</div>
-				<div class=" col-md-6 col-xl-3">
-					<div class="c-box">
-						<span class="count">2000</span><sup>+</sup>
-						<h3>Users Around World</h3>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Counter Area End -->
-
-	<!--  Footer Section Start -->
-	<footer class="footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-lg-4">
-						<div class="widget1">
-							<div class="logo">
-								<img src="img/flogo.png" class="img-fluid" alt="">
-							</div>
-							<p style="font-family:'Microsoft Yahei';">
-								js代码(www.jsdaima.com)是IT资源下载与IT技能学习平台。我们拒绝滥竽充数，只提供精品IT资源！
-							</p>
-							<div class="socialLinks">
-								<ul>
-									<li>
-										<a href="#">
-											<i class="fab fa-facebook-f"></i>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<i class="fab fa-twitter"></i>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<i class="fab fa-linkedin-in"></i>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<i class="fab fa-google-plus-g"></i>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-4">
-						<div class="widget2">
-							<h5>
-								Latest News
-							</h5>
-							<div class="media">
-								<img class="img-fluid" src="img/footerLatestNews/n1.jpg" alt="">
-								<div class="media-body d-flex align-self-center">
-									<div class="content">
-										<a href="blogDetails.html">
-											<p>
-													Did son unreserved themselves indulgence its
-											</p>
-										</a>
-										<span>
-											Aug 17, 2019
-										</span>
+								<div class="footer-telbox-items">
+									<div>
+										<span class="span-text">北京服务热线</span>
+										<span class="span-num">010-82537588</span>
+									</div>
+									<div>
+										<span class="span-text">沧州服务热线</span>
+										<span class="span-num">0317-6612366</span>
+									</div>
+									<div>
+										<span class="span-text">邯郸服务热线</span>
+										<span class="span-num">0310-3212366</span>
+									</div>
+									<div>
+										<span class="span-text">新乡服务热线</span>
+										<span class="span-num">0373-2512366</span>
 									</div>
 								</div>
 							</div>
-							<div class="media">
-								<img class="img-fluid" src="img/footerLatestNews/n2.jpg" alt="">
-								<div class="media-body d-flex align-self-center">
-									<div class="content">
-										<a href="blogDetails.html">
-											<p>
-													Rapturous am eagerness it as resolving household
-											</p>
-										</a>
-										<span>
-											Aug 17, 2019
-										</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-6 col-lg-2">
-						<div class="widget3">
-							<h5>
-								Quick Links
-							</h5>
-							<ul>
-								<li>
-									<a href="index.html">
-										Home
-									</a>
-								</li>
-								<li>
-									<a href="aboutUs.html">
-										about
-									</a>
-								</li>
-								<li>
-									<a href="contact.html">
-										contact
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										privecy
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										skills
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										career
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-sm-6 col-lg-2">
-						<div class="widget4">
-							<h5>
-									Other Links
-							</h5>
-							<ul>
-								<li>
-									<a href="#">
-										themeforest
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										graphicriver
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										codecanyon
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										videohive
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										redpen
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										codepen
-									</a>
-								</li>
-							</ul>
 						</div>
 					</div>
 				</div>
@@ -551,41 +224,45 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-12 text-center">
-							<p style="font-family:'Microsoft Yahei';">&copy; 2019 XX公司&nbsp;&nbsp;ICP备XXXXXXXX号&nbsp;&nbsp;技术支持：<a href="https://www.jsdaima.com/" title="js代码" target="_blank">js代码（www.jsdaima.com）</a></p>
+							<p style="font-family:'Microsoft Yahei';">&copy;Copyright © 2021 华文财税&nbsp;&nbsp;冀ICP备19008586号-1</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</footer>
-	<!--  Footer Section End -->
+		<!--  footer 结束 -->
 
-	<!--Start ClickToTop-->
-	<div class="totop">
-		<a href="#top">
-			<p>
-				<i class="fas fa-angle-up"></i>
-			</p>
-		</a>
-	</div>
-	<!--End ClickToTop-->
+		<!--返回顶部 开始-->
+		<!-- <div class="totop">
+			<a href="#top">
+				<p>
+					<i class="fas fa-angle-up"></i>
+				</p>
+			</a>
+		</div> -->
+		<!--返回顶部 结束 -->
 
-	<!--jQuery JS-->
-	<script src="js/jquery.min.js"></script>
-	<!--Bootstrap JS-->
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/popper.js"></script>
-	<!-- Way Point js -->
-	<script src="js/waypoints.min.js"></script>
-	<script src="js/counter.js"></script>
-	<!-- Contact js -->
-	<script src="js/contact.js"></script>
-	<!-- Owl carosul js -->
-	<script src="js/owl.carousel.min.js"></script>
-	<!-- Venobox JS-->
-	<script src="js/venobox.min.js"></script>
-	<!--Main-->
-	<script src="js/main.js"></script>
+		<!--jQuery JS-->
+		<script src="js/jquery.min.js"></script>
+		<!--Bootstrap JS-->
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/popper.js"></script>
+		<!-- Way Point js -->
+		<script src="js/waypoints.min.js"></script>
+		<script src="js/counter.js"></script>
+		<!-- Contact js -->
+		<script src="js/contact.js"></script>
+		<!-- Owl carosul js -->
+		<script src="js/owl.carousel.min.js"></script>
+		<!-- Venobox JS-->
+		<script src="js/venobox.min.js"></script>
+		<!--Main-->
+		<script src="js/main.js"></script>
+		<script type="text/javascript">
+			$(function() {
 
-</body>
+			});
+		</script>
+	</body>
 
 </html>
