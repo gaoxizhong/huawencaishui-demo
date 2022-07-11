@@ -39,7 +39,7 @@ body {
     margin: 0;
     padding: 0;
     font-weight: 400;
-    color: #555;
+    color: #333333;
     font-family: 'Roboto', sans-serif;
 	font-size: 0.22rem;
 }
@@ -234,7 +234,7 @@ header.header {
 	border-radius: 20px;
 }
 	
-.header.header .nav-item:hover::before {
+/* .header.header .nav-item:hover::before {
     position: absolute;
     content: " ";
     bottom: 0px;
@@ -242,32 +242,8 @@ header.header {
     width: 100%;
     height: 4px;
     background-color: #C78D11;
-}
-.header.header .nav-item:hover::after,.header.header .nav-item.active::before {
-    display: inline-block;
-    width: 0;
-    height: 0;
-    /* margin-left: 0.255em; */
-    /* vertical-align: 0.255em; */
-    content: "";
-    border-top: 0;
-    border-right: 0.06rem solid transparent;
-    border-bottom:  0.06rem solid #C78D11;
-    border-left: 0.06rem solid transparent;
-	position: absolute;
-	bottom: 4px;
-	left: 50%;
-	transform: translateX(-50%);
-}
-.header.header .nav-item.active::before {
-    position: absolute;
-    content: " ";
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    height: 4px;
-    background-color: #C78D11;
-}
+} */
+
 
 .header.header .nav-item.dropdown .dropdown-item {
     color: #333;
@@ -285,7 +261,35 @@ header.header {
 .navbar-nav .dropdown-menu {
     border-radius: 0px;
     margin-top: -1px;
-	min-width: 1.6rem;
+    /* max-width: 1.4rem; */
+    min-width: 0;
+    width: 100%;
+    position: relative;
+    overflow: none;
+}
+
+.navbar-nav .dropdown-menu::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    content: "";
+    border-top: 0;
+    border-right: 0.06rem solid transparent;
+    border-bottom:  0.06rem solid #C78D11;
+    border-left: 0.06rem solid transparent;
+	position: absolute;
+	top: -8px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.navbar-nav .dropdown-menu::before {
+    position: absolute;
+    content: " ";
+    top: -4px;
+    left: 0px;
+    width: 100%;
+    height: 4px;
+    background-color: #C78D11;
 }
 .navbar-light .navbar-toggler {
     border: 0px;
@@ -638,6 +642,8 @@ banner  结束
     font-family: PingFangSC-Regular, PingFang SC;
     font-weight: 400;
     line-height: 0.59rem;
+    color: #333333;
+
 }
 .section-title-box .section-l-eltitle{
 	width: 0.62rem;
@@ -843,9 +849,29 @@ banner  结束
 	color: #333333;
 }
 .tab-content-items .newsDynamic-items-title{
-	font-weight: bold;
-	font-size: 0.2rem;
+    height: 0.64rem;
+    font-size: 0.2rem;
+    display: -webkit-box;
+	display: -ms-box;
+	display: -moz-box;
+	display: -o-box;
+	box-orient:vertical;
+	-webkit-box-orient:vertical;
+	-ms-box-orient:vertical;
+	-moz-box-orient:vertical;
+	-o-box-orient:vertical;
+	line-clamp:2;
+	-webkit-line-clamp:2;
+	-ms-line-clamp:2;
+	-moz-line-clamp:2;
+	-o-line-clamp:2;
+	overflow:hidden;
 }
+
+.tab-content-items:hover .newsDynamic-items-title{
+    font-weight: 600;
+}
+
 .tab-content-items .newsDynamic-items-text{
 	margin-top: 0.1rem;
 	font-size: 0.14rem;
@@ -1083,14 +1109,15 @@ banner  结束
 	background-size:0.14rem 0.02rem;
 	
 }
-.footer-links>a{
+.footer-links>div{
 	font-size: 0.16rem;
 	font-family: PingFangSC-Medium, PingFang SC;
 	font-weight: 500;
 	color: #FFFFFF;
 	padding: 0.2rem 0;
 	line-height: 1;
-	display: inline-block;
+    display: inline-block;
+    color: #bd8a4c;
 }
 
 .footer-links ul li a{
@@ -1099,7 +1126,7 @@ banner  结束
 	font-weight: 400;
 	color: #DDDDDD;
 }
-.footer-links>a:hover,.footer-links ul li a:hover{
+.footer-links ul li a:hover{
 	color: #bd8a4c;
 }
 .footer-links ul li {
