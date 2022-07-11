@@ -9,10 +9,6 @@
     .copyRightArea {
         margin-top: 120px;
     }
-    #slider-area .slide-caption .slider-inner .innerSize{
-        width: 100%;
-        text-align: center;
-    }
     #slider-area .overlay {
         position: absolute;
         top: 0;
@@ -21,12 +17,6 @@
         height: 100%;
         background-image: none;
         background-color:rgba(0, 0, 0, 0.7);
-    }
-    #slider-area .slide-caption .slider-inner .tagLine {
-        color: #f1f1f1;
-    }
-    #slider-area .slide-caption .slider-inner .caption-title {
-        color: #fff;
     }
 
     #slider-area .slidveideo a {
@@ -49,10 +39,6 @@
     }
     .address h4 {
         margin-top: 25px;
-    }
-    #slider-area .slide-caption .slider-inner .caption-desc, 
-    #slider-area .slidveideo .videoText {
-        max-width: 760px;
     }
 
 }
@@ -164,13 +150,6 @@
     .footer .widget4 h5 {
         margin-top: 34px!important;
     }
-    #slider-area .slide-caption h1 {
-        font-size: 42px;
-    }
-    #slider-area .slide-caption .slider-inner .caption-title {
-        font-size: 45px;
-        line-height: 55px;
-    }
 }
 
 
@@ -181,15 +160,6 @@
     }
     #navbarSupportedContent {
         padding: 0px 15px;
-    }
-    #slider-area .slide-caption h1 {
-        font-size: 30px;
-    }
-    #slider-area .slide-caption .slider-inner .tagLine { 
-        font-size: 16px;
-    }
-    #slider-area .slide-caption .slider-inner .caption-title {
-        padding: 16px 0px 14px;
     }
     h2,
     .sectionHeader h2 {
@@ -238,25 +208,9 @@
         float: none;
         margin-top: 20px;
     }
-    #slider-area .slide-caption .slider-inner .caption-title {
-        font-size: 45px;
-        line-height: 55px;
-    }
  }
 
  @media (max-width: 414px) {
-    #slider-area .slide-caption .slider-inner .caption-desc {
-        font-size: 16px;
-    }
-    #slider-area .slide-caption .slider-inner {
-        padding: 0px 0px;
-    }
-    #slider-area .slide-caption .slider-inner .tagLine { 
-        font-size: 14px;
-    }
-    #slider-area .slide-caption .slider-inner .slide-btn{
-        text-align: center;
-    }
     #slider-area .slidveideo {
         display: block;
         margin-top: 20px;
@@ -304,23 +258,8 @@
     .contact-wrap .contact-form {
         padding: 37px 30px 50px;
     }
-    #slider-area .slide-caption .slider-inner .slide-btn {
-        margin-top: 27px;
-    }
     .contact-wrap .sectionHeader {
         margin-bottom: 18px;
-    }
-
-    #slider-area .slide-caption h1,
-    #slider-area .slide-caption .slider-inner .caption-title {
-        font-size: 29px;
-    }
-    #slider-area .slide-caption .slider-inner .slide-btn a.mybtn {
-        width: 145px;
-    }
-    #slider-area .slide-caption .slider-inner .slide-btn a,
-    #slider-area .slide-caption .slider-inner .slide-btn .video-icon-btn{
-        font-size: 14px;
     }
     #latest_news .c-box a h4 {
         font-size: 20px;
@@ -368,10 +307,6 @@
  }
 
  @media (max-width:384px){
-    #slider-area .slide-caption h1,
-    #slider-area .slide-caption .slider-inner .caption-title {
-        font-size: 30px;
-    }
     .comments-container .comments-list li {
         padding-left: 100px;
     }
@@ -390,14 +325,6 @@
         .feature .sectionHeader {
             margin-bottom: 64px;
         }
-        #slider-area .slide-caption h1 {
-            font-size: 36px;
-        }
-        #slider-area .slide-caption h1, 
-        #slider-area .slide-caption .slider-inner .caption-title {
-            font-size: 35px;
-            line-height: 45px;
-        }
 
         h2, .sectionHeader h2, .serviceDetails .content h2 {
             font-size: 28px;
@@ -406,15 +333,6 @@
  }
  
  @media (max-width: 360px){
-    #slider-area .slide-caption h1 {
-        font-size: 25px;
-    }
-    #slider-area .slide-caption .slider-inner .slide-btn .video-icon-btn span{
-        display: none;
-    }
-    #slider-area .slide-caption .slider-inner .caption-desc {
-        font-size: 15px;
-    }
     .v-box a {
         width: 65px;
         height: 65px;
@@ -528,10 +446,6 @@
  }
 
  @media (max-width: 330px){
-    #slider-area .slide-caption h1,
-    #slider-area .slide-caption h1, #slider-area .slide-caption .slider-inner .caption-title {
-        font-size: 23px;
-    }
     .sectionHeader h2{
         font-size: 22px;
     }
@@ -577,11 +491,6 @@
         margin-top: 25px;
         font-size: 21px;
     }
-    #slider-area .slide-caption h1, 
-    #slider-area .slide-caption h1, 
-    #slider-area .slide-caption .slider-inner .caption-title {
-        font-size: 35px;
-    }
     .sectionHeader h2 {
         font-size: 30px;
     }
@@ -605,11 +514,5 @@
  @media (min-width: 414px)  and (max-width: 415px){
     .mybtn {
         width: 160px;
-    }
-    #slider-area .slide-caption p {
-        font-size: 16px;
-    }
-    #slider-area .slidveideo {
-        display: inline-block;
     }
  }
