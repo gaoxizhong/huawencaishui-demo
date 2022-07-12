@@ -180,6 +180,24 @@ $(function ($) {
 			
 			g.preventDefault();
 		})
+    })();
+    // 加入我们手风琴模式
+	(function(){
+		// 初始化按钮样式
+        $('#recruitment').find('.tabs_items:eq(0)').addClass('active');
+        $('#recruitment').find('a.tabs_items-title:eq(0)').addClass('active');
+        $('#recruitment').find('.tabs_items-title .r-1:eq(0)').html('-');
+		$('#recruitment a.tabs_items-title').click(function(g){
+            $('.aboutUs-info-navbox a').removeClass('active');
+            $('#recruitment a.tabs_items-title').removeClass('active');
+            $('#recruitment .tabs_items-title .r-1').html('+');
+            $('#recruitment .tabs_items').removeClass('active');
+			$(this).addClass('active');
+            $(this).parent('.tabs_items').addClass('active');
+            $(this).find('.r-1').html('-');
+            
+			g.preventDefault();
+		})
 	})();
 	
 }(jQuery));

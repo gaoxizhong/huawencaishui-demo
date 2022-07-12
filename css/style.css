@@ -1874,12 +1874,15 @@ footer 结束
 	height: 0.56rem;
 	overflow: hidden;
 }
+
 .recruitment-tabs-box .tabs_items .tabs_items-title{
 	height: 0.56rem;
 	line-height: 0.56rem;
 	display: flex;
 	-ms-display: flexbox;
 	align-items: center;
+	border-bottom: 1px solid #F6F6F8;
+	color: #000;
 }
 .recruitment-tabs-box .tabs_items .tabs_items-title>div.r-1{
 	width: 0.62rem;
@@ -1906,6 +1909,7 @@ footer 结束
 .recruitment-tabs-box .tabs_items .tabs_items-info{
 	border: 1px solid #F6F6F8;
 	padding: 0.38rem 0.5rem 0.38rem 1.8rem;
+	position: relative;
 }
 .recruitment-tabs-box .tabs_items-info p{
 	font-size: 0.17rem;
@@ -1917,6 +1921,205 @@ footer 结束
 .tabs_items-info-p2{
 	margin-top: 0.24rem;
 }
+.items-info-btn{
+	display: inline-block;
+	width: 1.16rem;
+	height: 0.36rem;
+	font-size: 0.18rem;
+	background: #4C7EBD;
+	text-align: center;
+	line-height: 0.36rem;
+	border-radius: 20px;
+	color: #fff;
+	position: absolute;
+	bottom: 0.3rem;
+	right: 0.3rem;
+}
+.items-info-btn:hover{
+	color: #fff;
+}
+.recruitment-tabs-box .tabs_items .tabs_items-title:hover,.recruitment-tabs-box .tabs_items .tabs_items-title.active{
+	background: #4C7EBD;
+	color: #fff;
+}
+.tabs_items.active{
+	height: auto;
+}
+.joinUs-company-info{
+	padding: 0.6rem 1.6rem;
+	box-sizing: border-box;
+}
+.company-title-imgbox{
+	margin: 0 auto;
+}
+.company-title-imgbox>img{
+	width: 6.8rem;
+	height: 6.8rem;
+}
+.company-title-info{
+	padding: 0.64rem 0;
+}
+.title-info-1{
+	font-size: 0.42rem;
+	font-family: PingFangSC-Regular, PingFang SC;
+	font-weight: 400;
+	color: #333333;
+	line-height: 0.59rem;
+}
+.title-info-xian1{
+	width: 0.74rem;
+	height: 1px;
+	background: #C78D11;
+	margin: 0.3rem 0;
+}
+.title-info-2{
+	margin: 0.2rem 0;
+}
+.title-info-2 p{
+	font-size: 0.18rem;
+	font-family: PingFangSC-Regular, PingFang SC;
+	font-weight: 400;
+	color: #333333;
+	line-height: 0.25rem;
+	margin: 0.08rem 0;
+	padding-left: 0.2rem;
+}
+.title-info-xian2{
+	width: 100%;
+	height: 1px;
+	background: #DCDCDC;
+	margin: 0.2rem 0;
+}
+.title-info-btn{
+	width: 2.08rem;
+	text-align: center;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	background: #4C7EBD;
+	border: none;
+	color: #fff;
+	font-size: 0.18rem;
+	font-family: PingFangSC-Medium, PingFang SC;
+	margin-top: 0.4rem;
+}
+button.title-info-btn:focus {
+	outline: 5px auto #4C7EBD;
+}
+.oinUs-company-lc{
+	width: 100%;
+	height: 4.28rem;
+	background: url(../img/joinUs/company-bg.png) no-repeat center;
+	background-size: cover;
+	padding: 1.6rem 1.5rem 0;
+}
+.company-lc-box{
+	display: flex;
+	-ms-display: flexbox;
+	width: 100%;
+	padding: 0 1.32rem;
+}
+.company-lc-box>div{
+	flex: 1;
+	text-align: center;
+	width: 1.5rem;
+	margin: 0 0.9rem;
+}
+.company-lc-box>div.lc-box-items img{
+	width: 1.5rem;
+	height: 1.5rem;
+}
+.company-lc-box>div.lc-box-items p{
+	margin-top: 0.36rem;
+	font-size: 0.24rem;
+	font-family: PingFangSC-Regular, PingFang SC;
+	font-weight: 400;
+	color: #BD8A4C;
+	line-height: 0.33rem;
+}
+.joinUs-company-joinbox{
+	width: 100%;
+	height: 5.16rem;
+	background: #fff;
+	padding: 0.64rem 1.5rem 0.62rem;
+}
+.company-joinbox-i .company-joinbox-i-title{
+	font-size: 0.42rem;
+	font-family: PingFangSC-Regular, PingFang SC;
+	font-weight: 400;
+	color: #333333;
+	line-height: 0.59rem;
+}
+.joinbox-i-xian1{
+	width: 74px;
+	height: 1px;
+	background: #C78D11;
+	margin: 0.3rem 0;
+}
+.form-group{
+	width: 100%;
+	height: 0.48rem;
+	padding: 0.12rem 0;
+	margin: 0;
+	border-bottom: 1px solid #B5B5B5;
+}
+.form-input{
+	width: 100%;
+	height: 100%;
+	font-size: 0.16rem;
+	color: #666;
+	border: none;
+	padding-left: 0.04rem;
+}
+.form-input:focus{
+	border: none;
+	outline: none;
+
+}
+
+.contact-frm-btn{
+	width: 100%;
+	display: flex;
+	-ms-display: flexbox;
+	margin-top: 0.8rem;
+}
+.contact-frm-btn>button{
+	width: 2.08rem;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	text-align: center;
+	color: #fff;
+	font-size: 0.18rem;
+	border: none;
+}
+.contact-frm-btn>button.mr_btn_1{
+	background: #C78D11;
+}
+.contact-frm-btn>button.mr_btn_2{
+	background: #4C7EBD;
+	margin-left: 0.3rem;
+}
+.contact-frm-btn>button.mr_btn_1:focus{
+	outline: 5px auto #C78D11;
+}
+.contact-frm-btn>button.mr_btn_1:focus{
+	outline: 5px auto #4C7EBD;
+}
+.form-group>select.form-control{
+	width: 100%;
+	height: 100%;
+	font-size: 0.16rem;
+	line-height: 1.2;
+}
+.company-joinbox-img{
+	width: 100%;
+	height: auto;
+	text-align: right;
+}
+.company-joinbox-img>img{
+	width: 5rem;
+	height: 3.74rem;
+}
+
 /* ============================================================
 6. 加入我们 结束
 ============================================================== */
