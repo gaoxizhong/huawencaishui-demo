@@ -515,17 +515,21 @@ banner  结束
 	width: 100%;
 	height: 100%;
 	display: flex;
-	-ms-display: flexbox;
+	display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */  
+	display: -moz-flex; /* Firefox 18+ */  
+	display: -ms-flexbox; /* IE 10 */
 }
 .accordionbox-item{
 	width: 1.34rem;
 	height: 100%;
 	/* float: left; */
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
 	display: flex;
-	-ms-display: flexbox;
+	display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */  
+	display: -moz-flex; /* Firefox 18+ */  
+	display: -ms-flexbox; /* IE 10 */
 }
 .puAway-box{
 	width: 1.34rem;
@@ -626,7 +630,9 @@ banner  结束
 }
 .section-title-box{
 	display: flex;
-	display: -ms-flexbox;
+	display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */  
+	display: -moz-flex; /* Firefox 18+ */  
+	display: -ms-flexbox; /* IE 10 */
 	align-items: flex-end;
 	-ms-flex-align: end;
 	justify-content: space-between;
@@ -894,7 +900,9 @@ banner  结束
 }
 .lernMore-box{
 	display: flex;
-	-ms-display:flexbox;
+	display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */  
+	display: -moz-flex; /* Firefox 18+ */  
+	display: -ms-flexbox; /* IE 10 */
 	align-items: center;
 	-ms-align-items: center;
 	margin-top: 0.4rem;
@@ -1036,15 +1044,16 @@ banner  结束
 .footer {
     background-color: #333333;
 }
-.footer .footerTop{
+.footerTop{
 	width: 100%;
 	height: 3.5rem;
 	padding: 0.8rem 0;
+	background-color: #333333;
 }
-.footer .footerTop .sectionHeader{
+.footerTop .sectionHeader{
 	text-align: center;
 }
-.footer .footerTop .sectionHeader h2{
+.footerTop .sectionHeader h2{
 	font-size: 0.42rem;
 	color: #fff;
 	font-family: PingFangSC-Regular, PingFang SC;
@@ -1052,7 +1061,7 @@ banner  结束
 	line-height: none;
 	margin-bottom: 0;
 }
-.footer .footerTop .sectionHeader p{
+.footerTop .sectionHeader p{
 	font-size: 0.2rem;
 	color: #fff;
 	font-family: PingFangSC-Regular, PingFang SC;
@@ -1061,7 +1070,7 @@ banner  结束
 }
 
 
-.footer .footer-consult-btn{
+.footer-consult-btn{
 	display: inline-block;
 	width: 2.06rem;
 	height: 0.6rem;
@@ -1071,8 +1080,9 @@ banner  结束
 	color: #fff;
 	margin-top: 0.4rem;
 }
-.footer .footer-consult-btn:hover{
+.footer-consult-btn:hover{
 	background: #bd8a4c;
+	color: #fff;
 	border: none;
 }
 .footer .widget1 p {
@@ -1093,7 +1103,9 @@ banner  结束
 	width: 100%;
 	height: auto;
 	display: flex;
-	-ms-display: flexbox;
+	display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */  
+	display: -moz-flex; /* Firefox 18+ */  
+	display: -ms-flexbox; /* IE 10 */
 	align-items: center;
 	justify-content: space-between;
 	padding: 0 1.2rem;
@@ -1135,7 +1147,9 @@ banner  结束
 	border-left: 1px solid #4E5255;
 	border-right: 1px solid #4E5255;
 	display: flex;
-	-ms-display:flexbox;
+	display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */  
+	display: -moz-flex; /* Firefox 18+ */  
+	display: -ms-flexbox; /* IE 10 */
 	align-items: center;
 	justify-content: center;
 }
@@ -1151,7 +1165,9 @@ banner  结束
 	width: 100%;
 	text-align: center;
 	display: flex;
-	-ms-display:flexbox;
+	display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */  
+	display: -moz-flex; /* Firefox 18+ */  
+	display: -ms-flexbox; /* IE 10 */
 	align-items: center;
 	justify-content: center;
 }
@@ -1180,7 +1196,9 @@ banner  结束
 .footer-telbox-items{
 	width: 100%;
 	display: flex;
-	-ms-display:flexbox;
+	display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */  
+	display: -moz-flex; /* Firefox 18+ */  
+	display: -ms-flexbox; /* IE 10 */
 	flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
 	align-items: center;
@@ -1191,7 +1209,9 @@ banner  结束
 	width: 50%;
 	padding: 0.15rem 0;
 	display: flex;
-	-ms-display:flexbox;
+	display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */  
+	display: -moz-flex; /* Firefox 18+ */  
+	display: -ms-flexbox; /* IE 10 */
 	flex-direction: column;
 	-ms-flex-direction: column;
 	align-items: center;
@@ -1351,7 +1371,9 @@ footer 结束
 }
 .aboutUs-info .aboutUs-info-navbox{
 	display: flex;
-	-ms-display: flexbox;
+	display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */  
+	display: -moz-flex; /* Firefox 18+ */  
+	display: -ms-flexbox; /* IE 10 */
 	align-items: center;
 	justify-content: center;
 	border-bottom: 1px solid #d3d3d3;
@@ -1366,7 +1388,9 @@ footer 结束
 	width: 2.21rem;
 	height: 0.75rem;
 	display: flex;
-	-ms-display: flexbox;
+	display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */  
+	display: -moz-flex; /* Firefox 18+ */  
+	display: -ms-flexbox; /* IE 10 */
 	align-items: center;
 	justify-content: center;
 	position: relative;
@@ -1410,7 +1434,9 @@ footer 结束
 
 .huawen-title-box .titleText-t{
 	display: flex;
-	display: -ms-flexbox;
+	display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */  
+	display: -moz-flex; /* Firefox 18+ */  
+	display: -ms-flexbox; /* IE 10 */
 	align-items: center;
 	justify-content: center;
 }
@@ -1452,7 +1478,9 @@ footer 结束
 }
 .culture-title-box{
     display: flex;
-    -ms-display: flexbox;
+		display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */  
+		display: -moz-flex; /* Firefox 18+ */  
+		display: -ms-flexbox; /* IE 10 */
     align-items: center;
     justify-content: center;
     -ms-align-items: center;
@@ -1461,7 +1489,9 @@ footer 结束
 .culture-title-box>div{
     width: 5rem;
     display: flex;
-    -ms-display: flexbox;
+		display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */  
+		display: -moz-flex; /* Firefox 18+ */  
+		display: -ms-flexbox; /* IE 10 */
     align-items: center;
     -ms-align-items: center;
     padding: 0 0.5rem;
@@ -1507,7 +1537,9 @@ footer 结束
 .composition-box{
     margin: 0.3rem -1.5rem 0;
     display: flex;
-    -ms-display:flexbox;
+		display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */  
+		display: -moz-flex; /* Firefox 18+ */  
+		display: -ms-flexbox; /* IE 10 */
 }
 .composition-box>div{
     flex: 1;
@@ -1532,7 +1564,9 @@ footer 结束
 .team-block-items1{
     width: 100%;
     display: flex;
-    -ms-display:flexbox;
+		display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */  
+		display: -moz-flex; /* Firefox 18+ */  
+		display: -ms-flexbox; /* IE 10 */
 }
 .team-block-items1>img{
     width: 8rem;
@@ -1587,7 +1621,9 @@ footer 结束
   .team-items2-box{
     height: auto;
     display: flex;
-    -ms-display: flexbox;
+		display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */  
+		display: -moz-flex; /* Firefox 18+ */  
+		display: -ms-flexbox; /* IE 10 */
     padding: 0 0.77rem;
     margin: 0 -1.54rem;
   }
@@ -1631,7 +1667,9 @@ footer 结束
     padding: 0.6rem 0.25rem 0.3rem;
     margin: 0 -0.5rem;
     display: flex;
-    -ms-display: flexbox;
+		display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */  
+		display: -moz-flex; /* Firefox 18+ */  
+		display: -ms-flexbox; /* IE 10 */
   }
   .qualificati-list-items{
     width: 2.8rem;
@@ -1768,7 +1806,9 @@ footer 结束
 	width: 100%;
 	margin: 0.2rem 0;
 	display: flex;
-	-ms-display: flexbox;
+	display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */  
+	display: -moz-flex; /* Firefox 18+ */  
+	display: -ms-flexbox; /* IE 10 */
 	align-items: center;
 }
 .society-add-box,.society-time-box{
@@ -1807,7 +1847,9 @@ footer 结束
 	background: #FFFFFF;
 	border: 1px solid #BD8A4C;
 	display: flex;
-	-ms-display: flexbox;
+	display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */  
+	display: -moz-flex; /* Firefox 18+ */  
+	display: -ms-flexbox; /* IE 10 */
 	align-items: center;
 	position: relative;
 }
@@ -1846,7 +1888,9 @@ footer 结束
 	line-height: 0.56rem;
 	background: #BD8A4C;
 	display: flex;
-	-ms-display: flexbox;
+	display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */  
+	display: -moz-flex; /* Firefox 18+ */  
+	display: -ms-flexbox; /* IE 10 */
 	align-items: center;
 }
 .recruitment-titlebox>div.r-1{
@@ -1855,7 +1899,9 @@ footer 结束
 .recruitment-titlebox>div.r-box{
 	flex: 1;
 	display: flex;
-	-ms-display: flexbox;
+	display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */  
+	display: -moz-flex; /* Firefox 18+ */  
+	display: -ms-flexbox; /* IE 10 */
 	align-items: center;
 }
 .recruitment-titlebox>div.r-box>div{
@@ -1879,7 +1925,9 @@ footer 结束
 	height: 0.56rem;
 	line-height: 0.56rem;
 	display: flex;
-	-ms-display: flexbox;
+	display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */  
+	display: -moz-flex; /* Firefox 18+ */  
+	display: -ms-flexbox; /* IE 10 */
 	align-items: center;
 	border-bottom: 1px solid #F6F6F8;
 	color: #000;
@@ -1887,7 +1935,9 @@ footer 结束
 .recruitment-tabs-box .tabs_items .tabs_items-title>div.r-1{
 	width: 0.62rem;
 	display: flex;
-	-ms-display: flexbox;
+	display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */  
+	display: -moz-flex; /* Firefox 18+ */  
+	display: -ms-flexbox; /* IE 10 */
 	align-items: center;
 	justify-content: center;
 	font-size: 0.3rem;
@@ -1896,7 +1946,9 @@ footer 结束
 .recruitment-tabs-box .tabs_items .tabs_items-title>div.r-box{
 	flex: 1;
 	display: flex;
-	-ms-display: flexbox;
+	display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */  
+	display: -moz-flex; /* Firefox 18+ */  
+	display: -ms-flexbox; /* IE 10 */
 	align-items: center;
 }
 .recruitment-tabs-box .tabs_items .tabs_items-title>div.r-box>div{
@@ -2014,7 +2066,9 @@ button.title-info-btn:focus {
 }
 .company-lc-box{
 	display: flex;
-	-ms-display: flexbox;
+	display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */  
+	display: -moz-flex; /* Firefox 18+ */  
+	display: -ms-flexbox; /* IE 10 */
 	width: 100%;
 	padding: 0 1.32rem;
 }
@@ -2079,7 +2133,9 @@ button.title-info-btn:focus {
 .contact-frm-btn{
 	width: 100%;
 	display: flex;
-	-ms-display: flexbox;
+	display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */  
+	display: -moz-flex; /* Firefox 18+ */  
+	display: -ms-flexbox; /* IE 10 */
 	margin-top: 0.8rem;
 }
 .contact-frm-btn>button{
@@ -2122,4 +2178,286 @@ button.title-info-btn:focus {
 
 /* ============================================================
 6. 加入我们 结束
+============================================================== */
+/* ============================================================
+7. 新闻中心 开始
+============================================================== */
+.newsSection{
+	width: 100%;
+	height: 5.5rem;
+	background: url(../img/service/service-banner.png) no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+}
+.news-info{
+	width: 100%;
+	background: #fff;
+	padding: 0 0 0.4rem;
+}
+.news-info .news-info-navbox {
+	display: flex;
+	display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */  
+	display: -moz-flex; /* Firefox 18+ */  
+	display: -ms-flexbox; /* IE 10 */
+	align-items: center;
+	justify-content: center;
+	border-bottom: 1px solid #d3d3d3;
+}
+.news-info .news-info-navbox>a {
+	display: inline-block;
+	font-size: 0.18rem;
+	font-family: PingFangSC-Medium, PingFang SC;
+	font-weight: 500;
+	color: #333333;
+	line-height: 0.25rem;
+	width: 2.21rem;
+	height: 0.75rem;
+	display: flex;
+	display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */  
+	display: -moz-flex; /* Firefox 18+ */  
+	display: -ms-flexbox; /* IE 10 */
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+.news-info .news-info-navbox>a::before {
+	content: '';
+	width: 1px;
+	height: 0.18rem;
+	background: #d3d3d3;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+}
+.news-info .news-info-navbox>a:hover, .news-info .news-info-navbox>a.active, .news-info .news-info-navbox>a:hover::before, .news-info .news-info-navbox>a.active::before {
+	background: #bd8a4c;
+	color: #fff;
+}
+.news-tab-centent {
+	width: 100%;
+	padding: 0.6rem 1.5rem 0.2rem;
+}
+.news-tab-centent .newsTab_items {
+	display: none;
+}
+.news-tab-centent .newsTab_items:first-child {
+	display: block;
+}
+.news-itemslist-box{
+	padding: 0.1rem 0.20rem;
+}
+.news-itemslist-box .news-itemslist{
+	width: 100%;
+	padding: 0.1rem 0;
+}
+.news-itemslist-box .news-itemslist>a{
+	width: 100%;
+	display: inline-block;
+	display: flex;
+	display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */  
+	display: -moz-flex; /* Firefox 18+ */  
+	display: -ms-flexbox; /* IE 10 */
+}
+.news-itemslist-box .news-itemslist>a:hover{
+	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1000);
+}
+.news-itemslist-box .news-itemslist>a:hover .items-info-title{
+	font-weight: 600;
+}
+.news-itemslist-box .news-itemslist>a .items-img{
+	width: 4.5rem;
+	height: 2.2rem;
+}
+.news-itemslist-box .news-itemslist>a .items-info-box{
+	padding: 0.22rem 0.34rem;
+}
+.news-itemslist-box .items-info-title{
+	font-size: 0.21rem;
+	font-family: PingFangSC-Medium, PingFang SC;
+	font-weight: 500;
+	color: #333333;
+	line-height: 0.28rem;
+}
+.news-itemslist-box .items-info-text{
+	font-size: 0.17rem;
+	font-family: PingFangSC-Regular, PingFang SC;
+	font-weight: 400;
+	color: #666666;
+	line-height: 0.28rem;
+	margin-top: 0.09rem;
+	display: box;
+	display: -webkit-box;
+	display: -ms-box;
+	display: -moz-box;
+	display: -o-box;
+	box-orient:vertical;
+	-webkit-box-orient:vertical;
+	-ms-box-orient:vertical;
+	-moz-box-orient:vertical;
+	-o-box-orient:vertical;
+	line-clamp:2;
+	-webkit-line-clamp:2;
+	-ms-line-clamp:2;
+	-moz-line-clamp:2;
+	-o-line-clamp:2;
+	overflow:hidden;
+}
+.news-itemslist-box .items-info-f{
+	font-size: 0.15rem;
+	font-family: PingFangSC-Light, PingFang SC;
+	font-weight: 300;
+	color: #333333;
+	line-height: 0.2rem;
+	margin-top: 0.2rem;
+}
+.news-itemslist-box .items-info-f img{
+	width: 0.17rem;
+	height: 0.17rem;
+	margin-bottom: 2px;
+}
+.items-info-s{
+	padding-left: 0.52rem;
+}
+.news-popular-box{
+	padding: 0.2rem 0;
+}
+.popular-div{
+	width: 100%;
+	border-left: 1px solid #DCDCDC;
+	padding: 0 0 0 0.26rem;
+}
+.popular-keyWords-box{
+	border-bottom: 1px solid #DCDCDC;
+}
+.news-popular-box .keyWords-title{
+	position: relative;
+	padding-left: 0.14rem;
+	font-size: 0.2rem;
+	font-family: PingFangSC-Semibold, PingFang SC;
+	font-weight: 600;
+	color: #333333;
+	line-height: 0.28rem;
+}
+.news-popular-box .keyWords-title::before{
+	content: '';
+	width: 0.04rem;
+	height: 0.2rem;
+	background: #C78D11;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.news-popular-box .keyWords-items-box{
+	display: flex;
+	display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */  
+	display: -moz-flex; /* Firefox 18+ */  
+	display: -ms-flexbox; /* IE 10 */
+	flex-wrap: wrap;
+}
+.news-popular-box .keyWords-items-box>div{
+	width: 33.33333%;
+	text-align: left;
+	margin: 0.13rem 0;
+}
+.news-popular-box .keyWords-items-box>div a{
+	display: inline-block;
+	font-size: 0.18rem;
+	font-family: PingFangSC-Regular, PingFang SC;
+	font-weight: 400;
+	color: #333333;
+	line-height: 0.25rem;
+}
+.news-popular-box .keyWords-items-box>div a:hover,.news-popular-box .keyWords-items-box>div a.active{
+	color: #4C7EBD;
+	border-bottom: 2px solid #4C7EBD;
+}
+.popular-news-box{
+	padding-top: 0.2rem;
+}
+.popular-news-box .popular-news-title{
+	position: relative;
+	padding-left: 0.14rem;
+	font-size: 0.2rem;
+	font-family: PingFangSC-Semibold, PingFang SC;
+	font-weight: 600;
+	color: #333333;
+	line-height: 0.28rem;
+}
+.popular-news-box .popular-news-title::before{
+	content: '';
+	width: 0.04rem;
+	height: 0.2rem;
+	background: #C78D11;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.popular-news-items{
+	width: 100%;
+}
+.popular-news-items ul,.popular-news-items ul li{
+	width: 100%;
+}
+.popular-news-items ul li{
+	margin: 0.1rem 0;
+}
+.popular-news-items ul li>a {
+	display: inline-block;
+	width: 100%;
+	color: #333;
+}
+.popular-news-items ul li>a .news-itemsLi-title{
+	display: flex;
+	display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */  
+	display: -moz-flex; /* Firefox 18+ */  
+	display: -ms-flexbox; /* IE 10 */
+}
+.popular-news-items ul li>a .news-itemsLi-title img{
+	width: 0.14rem;
+	height: 0.14rem;
+	margin-top: 0.06rem;
+}
+.popular-news-items ul li>a .news-itemsLi-title span{
+	flex: 1;
+	padding: 0 0.2rem 0 0.1rem;
+	font-size: 0.18rem;
+	font-family: PingFangSC-Medium, PingFang SC;
+	font-weight: 500;
+	color: #333333;
+	line-height: 0.25rem;
+	display: box;
+	display: -webkit-box;
+	display: -ms-box;
+	display: -moz-box;
+	display: -o-box;
+	box-orient:vertical;
+	-webkit-box-orient:vertical;
+	-ms-box-orient:vertical;
+	-moz-box-orient:vertical;
+	-o-box-orient:vertical;
+	line-clamp:2;
+	-webkit-line-clamp:2;
+	-ms-line-clamp:2;
+	-moz-line-clamp:2;
+	-o-line-clamp:2;
+	overflow:hidden;
+}
+.popular-news-items ul li>a .news-itemsLi-time{
+	font-size: 0.15rem;
+	font-family: PingFangSC-Light, PingFang SC;
+	font-weight: 300;
+	color: #333333;
+	line-height: 0.2rem;
+	margin-top: 0.1rem;
+}
+.popular-news-items ul li>a:hover .news-itemsLi-title span{
+	font-weight: 500;
+	color: #4C7EBD;
+}
+/* ============================================================
+7. 新闻中心 结束
 ============================================================== */
