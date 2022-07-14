@@ -161,8 +161,24 @@ $(function ($) {
 		    }
 		}
 	});
-	
-	
+    //税种
+    $('#tax-carousel').owlCarousel({
+        nav: false,
+        navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+        dots:false,
+        autoplayTimeout: 3000,
+        smartSpeed: 450,
+        items: 4
+    });
+    //地区
+    $('#add-carousel').owlCarousel({
+        nav: false,
+        navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+        dots:false,
+        autoplayTimeout: 3000,
+        smartSpeed: 450,
+        items: 7
+    });
 	// 关于我们
 	(function(){
 		// nav tab
@@ -181,6 +197,23 @@ $(function ($) {
 			g.preventDefault();
 		})
     })();
+	// 新闻中心
+	(function(){
+		// nav tab
+		// 初始化按钮样式
+		$('.news-info-navbox').find('a:eq(0)').addClass('active');
+		$('.news-info-navbox a').click(function(g){
+			$('.news-info-navbox a').removeClass('active');
+			$(this).addClass('active');
+			var	index = $(this).index();
+			$('.news-tab-centent .newsTab_items').fadeOut();
+			setTimeout(function(){
+				$('.news-tab-centent .newsTab_items').eq(index).fadeIn();
+			},500)
+			g.preventDefault();
+		})
+    })();
+
     // 加入我们手风琴模式
 	(function(){
 		// 初始化按钮样式

@@ -2461,3 +2461,591 @@ button.title-info-btn:focus {
 /* ============================================================
 7. 新闻中心 结束
 ============================================================== */
+/* ============================================================
+8. 政策法规 开始
+============================================================== */
+.regulationsSection{
+	width: 100%;
+	height: 5.5rem;
+	background: url(../img/service/service-banner.png) no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+}
+.regulations-info-box{
+	width: 100%;
+	background: #F6F6F8;
+}
+.regulations-centent-box{
+	width: 100%;
+	padding: 0.6rem 1.6rem;
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: -moz-flex;
+	display: -o-flex;
+}
+.left-tree-b{
+	width: 2rem;
+	background: #FFFFFF;
+	border-radius: 8px;
+	position: relative;
+}
+.rifht-info-b{
+	flex: 1;
+	padding-left: 0.28rem;
+}
+.rifht-imginput-box{
+	width: 100%;
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: -moz-flex;
+	display: -o-flex;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	-ms-justify-content: space-between;
+	-moz-justify-content: space-between;
+	-o-justify-content: space-between;
+}
+.rifht-img-box{
+	width: 8.3rem;
+	height: 4.56rem;
+	border-radius: 8px;
+	overflow: hidden;
+}
+.rifht-img-box>img{
+	width: 100%;
+	height: 100%;
+}
+.rifht-input-box{
+	width: 4.9rem;
+	height: 4.56rem;
+	border-radius: 8px;
+	background: #fff;
+	padding: 0.15rem 0;
+}
+.rifht-lilist-box{
+	width: 100%;
+	margin-top: 0.4rem;
+	border-radius: 8px;
+	background: #fff;
+	padding: 0.25rem 0.3rem;
+}
+.sidebar-btn{
+	width: 100%;
+	padding: 0.14rem 0.2rem;
+	text-align: right;
+}
+.sidebar-btn>img{
+	width: 0.18rem;
+	height: 0.15rem;
+	cursor:pointer;
+}
+
+.form-box{
+	width: 100%;
+	padding: 0 0.12rem;
+	margin: 0 0 0.12rem 0;
+	height: 0.38rem;
+}
+.form-box .input-group-box{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	border-radius: 20px;
+	padding: 0 0.1rem 0 0.08rem;
+	border: 1px solid #DCDCDC;
+}
+.form-box .sidebar-input-b{
+	flex: 1;
+	width: 0;
+	border: none;
+	font-size: 0.13rem;
+	font-family: PingFangSC-Regular, PingFang SC;
+	font-weight: 400;
+	color: #999999;
+	line-height: 0.2rem;
+	height: 100%;
+}
+.form-box .sidebar-input-b:focus{
+	border: none;
+	outline: none;
+}
+.form-box .sidebar-btn-b{
+	border: none;
+	background: #fff;
+	outline: none;
+	padding: 0 0.05rem;
+	margin-bottom: 0.02rem;
+}
+
+
+
+
+
+
+
+
+
+
+.left-tree-b .sidebar {
+	background-color: #fff;
+	transition: all 0.2s ease-in-out 0s;
+	width: 100%;
+}
+
+.sidebar-menu ul {
+	font-size: 0.18rem;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+.sidebar-menu > ul > li {
+	position: relative;
+	height: 0.56rem;
+	text-align: center;
+	line-height: 0.56rem;
+}
+.menu-title {
+	color: #333;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 0.18rem;
+	opacity: 1;
+	height: 0.56rem;
+	white-space: nowrap;
+	text-transform: uppercase;
+}
+.menu-title.active{
+	background: #F4E9D0;
+	color: #C78D11;
+}
+.menu-title span img{
+	width: 0.18rem;
+	height: 0.21rem;
+	margin-bottom: 0.02rem;
+	margin-right: 0.08rem;
+}
+.sidebar-menu > ul > li > a {
+	align-items: center;
+	border-radius: 3px;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	transition: all 0.2s ease-in-out 0s;
+	color: #666;
+	font-size: 0.18rem;
+	height: 100%;
+	width: 100%;
+}
+.sidebar .sidebar-menu > ul > li > a span {
+	transition: all 0.2s ease-in-out 0s;
+	display: inline-block;
+	white-space: nowrap;
+}
+.sidebar-menu .arrow {
+	-webkit-transition: -webkit-transform 0.15s;
+	-o-transition: -o-transform 0.15s;
+	transition: transform .15s;
+	position: absolute;
+	right: 0.1rem;
+	display: inline-block;
+	text-rendering: auto;
+	line-height: 0.4rem;
+	font-size: 0.28rem;
+	font-weight: bold;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-transform: translate(0, 0);
+	-ms-transform: translate(0, 0);
+	-o-transform: translate(0, 0);
+	transform: translate(0, 0);
+	line-height: 18px;
+	top: 11px;
+}
+.sidebar-menu li a.subdrop .arrow {
+	-ms-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+.sidebar-menu .menu-arrow:before {
+	content: "\f105";
+}
+.sidebar-menu ul ul {
+	display: none;
+}
+.sidebar-menu ul ul a {
+	display: block;
+	font-size: 0.16rem;
+	padding: 7px 10px 7px 45px;
+	position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.rifht-input-box .group-box{
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: -moz-flex;
+	display: -o-flex;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	-ms-justify-content: space-between;
+	-moz-justify-content: space-between;
+	-o-justify-content: space-between;
+	align-items: center;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	-moz-align-items: center;
+	-o-align-items: center;
+	padding: 0.12rem 0.4rem 0.12rem 0.3rem;
+}
+.rifht-input-box .slide-sel-box{
+		width: 100%;
+		height: 0.5rem;
+		line-height: 0.5rem;
+		margin: 0.16rem 0;
+		display: flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: -moz-flex;
+		display: -o-flex;
+		justify-content: space-between;
+		-webkit-justify-content: space-between;
+		-ms-justify-content: space-between;
+		-moz-justify-content: space-between;
+		-o-justify-content: space-between;
+		align-items: center;
+		-webkit-align-items: center;
+		-ms-align-items: center;
+		-moz-align-items: center;
+		-o-align-items: center;
+		padding: 0 0.2rem 0 0.3rem;
+}
+.rifht-input-box .slide-sel-box .slide-title{
+	width: auto;
+	font-size: 0.18rem;
+	font-family: PingFangSC-Semibold, PingFang SC;
+	font-weight: 600;
+	color: #333333;
+	line-height: 0.25rem;
+	margin: 0;
+}
+.rifht-input-box .slide-sel-box:hover{
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1000);
+	border-radius: 6px;
+}
+.rifht-input-box .group-box label{
+	width: auto;
+	font-size: 0.18rem;
+	font-family: PingFangSC-Semibold, PingFang SC;
+	font-weight: 600;
+	color: #333333;
+	line-height: 0.25rem;
+	margin: 0;
+}
+.rifht-input-box .group-box .input-div{
+	flex: 1;
+	padding-left: 0.15rem;
+	height: 0.46rem;
+	background: #FFFFFF;
+}
+.rifht-input-box .group-box .input-div input{
+	width: 100%;
+	height: 100%;
+	border: 2px solid #DCDCDC;
+	border-radius: 6px;
+	padding: 0.1rem;
+	line-height: 1;
+	font-size: 0.16rem;
+}
+.rifht-frm-btn{
+	width: 100%;
+	padding: 0.15rem 0;
+	text-align: center;
+}
+.rifht-frm-btn .mr_btn_1{
+	width: 3.5rem;
+	height: 0.5rem;
+	line-height: 0.5rem;
+	border-radius: 6px;
+	background: #C78D11;
+	color: #fff;
+	font-family: PingFangSC-Semibold, PingFang SC;
+	font-size: 0.16rem;
+	text-align: center;
+	border: none;
+}
+.rifht-frm-btn>button.mr_btn_1:focus{
+	outline: 5px auto #C78D11;
+}
+.rifht-lilist-box .table {
+	color: #333;
+	margin-bottom: 0;
+	width: 100%;
+}
+.rifht-lilist-box .table td,.rifht-lilist-box .table th {
+	padding: 0.15rem 0;
+	vertical-align: top;
+	border-top: 0;
+
+}
+.rifht-lilist-box .table thead tr th {
+	font-size: 0.2rem;
+	font-family: PingFangSC-Semibold, PingFang SC;
+	font-weight: 600;
+	color: #333333;
+	border: 0;
+	white-space: nowrap;
+}
+.rifht-lilist-box .table tbody tr td{
+	font-size: 0.18rem;
+	font-family: PingFangSC-Medium, PingFang SC;
+	font-weight: 500;
+	color: #333333;
+	line-height: 0.25rem;
+}
+.table-hover tbody tr td a{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+.table-hover tbody tr:hover {
+	background-color: #fff;
+}
+.table-hover tbody tr:hover a{
+	color: #C78D11;
+}
+.tr-a{
+	color: #333333;
+}
+.slide-sel-box .sel-list-box{
+	flex: 1;
+	height: 100%;
+	padding-right: 0.1rem;
+	padding-left: 0.1rem;
+	width: 0;
+}
+
+.tax-carousel{
+	width: 100%;
+}
+.tax-carousel a{
+	height: 100%;
+	font-size: 0.16rem;
+	font-family: PingFangSC-Regular, PingFang SC;
+	font-weight: 400;
+	color: #666666;
+	line-height: 0.22rem;
+}
+.tax-carousel a:hover,.tax-carousel a.active{
+	color: #C78D11;
+}
+/* .slide-sel-box  .owl-carousel .owl-item{
+	text-align: center;
+} */
+/* ============================================================
+8. 政策法规 结束
+============================================================== */
+/* ============================================================
+9. 新闻详情页 开始
+============================================================== */
+.news-details-title{
+	font-size: 0.24rem;
+	font-family: PingFangSC-Semibold, PingFang SC;
+	font-weight: 600;
+	color: #333333;
+	line-height: 0.33rem;
+	padding-bottom: 0.3rem;
+	border-bottom: 1px solid #DCDCDC;
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: -moz-flex;
+	display: -o-flex;
+	align-items: center;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	-moz-align-items: center;
+	-o-align-items: center;
+	width: 100%;
+}
+.news-details-title>img{
+	width: 0.12rem;
+	height: 0.12rem;
+}
+.news-details-title>span{
+	padding-left: 0.1rem;
+}
+.details-itemslist-box{
+	width: 100%;
+	padding: 0 0.2rem;
+}
+.details-popular-box.news-popular-box{
+	padding-top: 0;
+}
+.details-popular-box.news-popular-box .popular-keyWords-box {
+	padding-top: 0.3rem;
+}
+.details-info-t {
+	font-size: 0.15rem;
+	font-family: PingFangSC-Light, PingFang SC;
+	font-weight: 300;
+	color: #333333;
+	line-height: 0.2rem;
+	padding-top: 0.3rem;
+
+}
+.details-info-t img{
+	width: 0.17rem;
+	height: 0.17rem;
+	margin-bottom: 2px;
+}
+.details-info-t .items-info-s {
+	padding-left: 0.52rem;
+}
+.info-centent-box{
+	text-align: center;
+	width: 100%;
+
+}
+.info-centent-box img{
+	margin: 0.3rem 0;
+}
+.info-centent-box p,.info-centent-box span{
+	font-size: 0.16rem;
+	font-family: PingFangSC-Regular, PingFang SC;
+	font-weight: 400;
+	color: #666666;
+	line-height: 0.28rem;
+}
+.details-centent-box{
+	padding-bottom: 0.3rem;
+	border-bottom: 1px solid #DCDCDC;
+}
+.page-btn-box{
+	padding-top: 0.5rem;
+	justify-content: center;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	-moz-justify-content: center;
+	-o-justify-content: center;
+}
+.page-btn-box .page-btn{
+	height: 0.64rem;
+	background: #F8F8F8;
+	border-radius: 8px;
+	border: 1px solid #DCDCDC;
+	padding: 0.07rem 0;
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: -moz-flex;
+	display: -o-flex;
+	align-items: center;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	-moz-align-items: center;
+	-o-align-items: center;
+	line-height: 0.64rem;
+	width: 100%;
+}
+.page-btn-box .page-btn:focus{
+	outline: 5px auto #DCDCDC;
+}
+.page-btn-l{
+	width: auto;
+	height: 100%;
+	border-right: 1px solid #D8D8D8;
+	padding: 0 0.2rem;
+	font-size: 0.15rem;
+	font-family: PingFangSC-Medium, PingFang SC;
+	font-weight: 500;
+	color: #333333;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: -moz-flex;
+	display: -o-flex;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	-moz-align-items: center;
+	-o-align-items: center;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	-moz-justify-content: center;
+	-o-justify-content: center;
+}
+.page-btn .page-btn-r{
+	flex: 1;
+	padding: 0 0.2rem;
+}
+.page-btn .page-btn-r p{
+	text-align: left;
+}
+.page-btn .page-btn-r p.btn-p-1{
+	font-size: 0.16rem;
+	font-family: PingFangSC-Medium, PingFang SC;
+	font-weight: 500;
+	color: #333333;
+	line-height: 0.22rem;
+	display: box;
+	display: -webkit-box;
+	display: -ms-box;
+	display: -moz-box;
+	display: -o-box;
+	box-orient:vertical;
+	-webkit-box-orient:vertical;
+	-ms-box-orient:vertical;
+	-moz-box-orient:vertical;
+	-o-box-orient:vertical;
+	line-clamp:1;
+	-webkit-line-clamp:1;
+	-ms-line-clamp:1;
+	-moz-line-clamp:1;
+	-o-line-clamp:1;
+	overflow: hidden;
+}
+.page-btn .page-btn-r p.btn-p-time{
+	font-size: 0.14rem;
+	font-family: PingFangSC-Regular, PingFang SC;
+	font-weight: 400;
+	color: #333333;
+	line-height: 0.2rem;
+}
+.ewmimg-img{
+	margin: 0.3rem 0;
+	width: 6.4rem;
+	height: 5rem;
+}
+/* ============================================================
+9. 新闻详情页 结束
+============================================================== */
