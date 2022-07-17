@@ -824,7 +824,7 @@ banner  结束
 .newsDynamic .tabs_item{
 	display: none;
 }
-.newsDynamic .tabs_item:first-child {
+.newsDynamic .tabs_item.current {
   display: block;
 }
 .tab-content-items{
@@ -1300,6 +1300,54 @@ footer 结束
 }
 
 
+/* 客服 */
+.service-box{
+	position: fixed;
+	top: 80%;
+	right: 0;
+	z-index: 9999;
+	opacity: 1;
+	transform: translateY(-50%);
+	display: flex;
+	display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */  
+	display: -moz-flex; /* Firefox 18+ */  
+	display: -ms-flexbox; /* IE 10 */
+	align-items: center;
+	justify-content: space-between;
+}
+.service-box>div{
+	width: 2.2rem;
+	height: 0.5rem;
+	display: flex;
+	display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */  
+	display: -moz-flex; /* Firefox 18+ */  
+	display: -ms-flexbox; /* IE 10 */
+	align-items: center;
+	border-top-left-radius: 10px;
+	color: #fff;
+	font-size: 0.16rem;
+	padding-left: 0.1rem;
+	cursor: pointer;
+}
+.service-box>div>img{
+	width: 0.36rem;
+	height: 0.36rem;
+	margin-right: 0.1rem;
+}
+.service-box>div:nth-of-type(1){
+	margin-right: 0.2rem;
+	background: #FF7E00;
+}
+.service-box>div:nth-of-type(2){
+	background: #C78D11;
+}
+.chatBox{
+	width: 3.36rem;
+	height: 4rem;
+	position: absolute;
+	top: -4rem;
+	right: 0;
+}
 /* ==================================================
 	二级页面背景图区域 开始
 ====================================================== */
@@ -1307,10 +1355,9 @@ footer 结束
 .insuronbreadcrumb {
 	width: 100%;
 	height: 5.5rem;
-    background: url(../img/bg-1.png) no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
+	background: url(../img/bg-1.png) no-repeat center;
+	background-size: cover;
+	position: relative;
 	padding-top: 1.6rem;
 }
 .insuronbreadcrumb .bcoverlay {
@@ -1421,9 +1468,6 @@ footer 结束
 }
 .aboutUs-tab-centent .aboutUsTab_items{
 	display: none;
-}
-.aboutUs-tab-centent .aboutUsTab_items:first-child {
-  display: block;
 }
 
 .huawen-title-box{
@@ -1706,10 +1750,9 @@ footer 结束
 .service-banner {
 	width: 100%;
 	height: 5.5rem;
-    background: url(../img/service/service-banner.png) no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
+	background: url(../img/service/service-banner.png) no-repeat center;
+	background-size: cover;
+	position: relative;
 }
 .service-info{
 	width: 100%;
@@ -1749,10 +1792,9 @@ footer 结束
 .joinUs-banner {
 	width: 100%;
 	height: 5.5rem;
-    background: url(../img/joinUs/join-bg.png) no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
+	background: url(../img/joinUs/join-bg.png) no-repeat center;
+	background-size: cover;
+	position: relative;
 }
 .joinUs-info{
 	width: 100%;
@@ -2187,7 +2229,6 @@ button.title-info-btn:focus {
 	height: 5.5rem;
 	background: url(../img/service/service-banner.png) no-repeat center;
 	background-size: cover;
-	background-attachment: fixed;
 	position: relative;
 }
 .news-info{
@@ -2266,10 +2307,17 @@ button.title-info-btn:focus {
 .news-itemslist-box .news-itemslist>a:hover .items-info-title{
 	font-weight: 600;
 }
-.news-itemslist-box .news-itemslist>a .items-img{
+.news-itemslist-box .news-itemslist>a .items-img-box{
 	width: 4.5rem;
 	height: 2.2rem;
+	text-align: center;
+	line-height: 2.2rem;
 }
+.news-itemslist-box .news-itemslist>a .items-img{
+	max-width: 4.5rem;
+	max-height: 2.2rem;
+}
+
 .news-itemslist-box .news-itemslist>a .items-info-box{
 	padding: 0.22rem 0.34rem;
 }
@@ -2469,7 +2517,6 @@ button.title-info-btn:focus {
 	height: 5.5rem;
 	background: url(../img/service/service-banner.png) no-repeat center;
 	background-size: cover;
-	background-attachment: fixed;
 	position: relative;
 }
 .regulations-info-box{
@@ -2490,6 +2537,12 @@ button.title-info-btn:focus {
 	background: #FFFFFF;
 	border-radius: 8px;
 	position: relative;
+	overflow: hidden;
+	transition: all 0.2s ease-in-out 0s;
+}
+.left-tree-b.active{
+	width: 0.5rem;
+	transition: all 0.2s ease-in-out 0s;
 }
 .rifht-info-b{
 	flex: 1;
@@ -2594,7 +2647,9 @@ button.title-info-btn:focus {
 	transition: all 0.2s ease-in-out 0s;
 	width: 100%;
 }
-
+.sidebar-menu ul a{
+	display: block;
+}
 .sidebar-menu ul {
 	font-size: 0.18rem;
 	list-style-type: none;
@@ -2604,22 +2659,38 @@ button.title-info-btn:focus {
 }
 .sidebar-menu > ul > li {
 	position: relative;
-	height: 0.56rem;
+	height: auto;
 	text-align: center;
 	line-height: 0.56rem;
 }
+
 .menu-title {
+	opacity: 1;
+}
+.menu-title>a{
 	color: #333;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	font-size: 0.18rem;
 	opacity: 1;
 	height: 0.56rem;
 	white-space: nowrap;
 	text-transform: uppercase;
+	display: flex !important;
+	align-items: center;
+	padding-left: 0.2rem;
 }
-.menu-title.active{
+.left-tree-b.active .menu-title>a{
+	padding: 0;
+}
+.left-tree-b.active .menu-title>a i{
+	width: 100%;
+}
+.left-tree-b.active .menu-title>a span{
+	display: none;
+}
+.left-tree-b.active .menu-title ul{
+	display: none !important;
+}
+.menu-title>a.active,.menu-title>a:hover{
 	background: #F4E9D0;
 	color: #C78D11;
 }
@@ -2629,22 +2700,29 @@ button.title-info-btn:focus {
 	margin-bottom: 0.02rem;
 	margin-right: 0.08rem;
 }
-.sidebar-menu > ul > li > a {
+.sidebar-menu > ul > li>ul > li > a {
 	align-items: center;
 	border-radius: 3px;
 	display: flex;
-	justify-content: center;
 	position: relative;
 	transition: all 0.2s ease-in-out 0s;
 	color: #666;
 	font-size: 0.18rem;
 	height: 100%;
 	width: 100%;
+	padding-left: 0.34rem;
+}
+.sidebar-menu > ul > li > a.active,.sidebar-menu > ul > li > a:hover{
+	color: #BD8A4C;
 }
 .sidebar .sidebar-menu > ul > li > a span {
 	transition: all 0.2s ease-in-out 0s;
 	display: inline-block;
 	white-space: nowrap;
+	padding-left: 0.04rem;
+}
+.sidebar .sidebar-menu > ul > li > a > i {
+	font-size: 0.22rem;
 }
 .sidebar-menu .arrow {
 	-webkit-transition: -webkit-transform 0.15s;
@@ -2668,26 +2746,35 @@ button.title-info-btn:focus {
 	margin-top: -0.12rem;
 }
 .sidebar-menu li a.subdrop .arrow {
-	-ms-transform: rotate(90deg);
-	-webkit-transform: rotate(90deg);
-	-o-transform: rotate(90deg);
-	transform: rotate(90deg);
+	-ms-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
 }
 .sidebar-menu .menu-arrow:before {
 	content: "\f105";
 }
-.sidebar-menu ul ul {
+/* .sidebar-menu ul ul {
+	display: block;
+} */
+.sidebar-menu ul ul a {
+	font-size: 0.16rem;
+	position: relative;
+	color: #999;
+}
+.sidebar-menu ul ul a.active,.sidebar-menu ul ul a:hover{
+	color: #BD8A4C;
+}
+.submenu a span{
+	transition: all 0.2s ease-in-out 0s;
+	display: inline-block;
+	white-space: nowrap;
+	padding-left: 0.04rem;
+}
+
+.sidebar-menu ul li ul{
 	display: none;
 }
-.sidebar-menu ul ul a {
-	display: block;
-	font-size: 0.16rem;
-	padding: 7px 10px 7px 45px;
-	position: relative;
-}
-
-
-
 
 
 
@@ -2832,11 +2919,30 @@ button.title-info-btn:focus {
 	color: #333333;
 	line-height: 0.25rem;
 }
+.rifht-lilist-box .table tbody tr td:nth-of-type(1) a,.rifht-lilist-box .table tbody tr td:nth-of-type(2) a{
+	display: box;
+	display: -webkit-box;
+	display: -ms-box;
+	display: -moz-box;
+	display: -o-box;
+	box-orient:vertical;
+	-webkit-box-orient:vertical;
+	-ms-box-orient:vertical;
+	-moz-box-orient:vertical;
+	-o-box-orient:vertical;
+	line-clamp:1;
+	-webkit-line-clamp:1;
+	-ms-line-clamp:1;
+	-moz-line-clamp:1;
+	-o-line-clamp:1;
+	overflow:hidden;
+}
 .table-hover tbody tr td a{
 	display: inline-block;
 	width: 100%;
 	height: 100%;
 }
+
 .table-hover tbody tr:hover {
 	background-color: #fff;
 }
@@ -2845,6 +2951,7 @@ button.title-info-btn:focus {
 }
 .tr-a{
 	color: #333333;
+	padding-right: 0.1rem;
 }
 .slide-sel-box .sel-list-box{
 	flex: 1;
@@ -2871,6 +2978,7 @@ button.title-info-btn:focus {
 /* .slide-sel-box  .owl-carousel .owl-item{
 	text-align: center;
 } */
+
 /* ============================================================
 8. 政策法规 结束
 ============================================================== */
@@ -2977,8 +3085,8 @@ button.title-info-btn:focus {
 	line-height: 0.64rem;
 	width: 100%;
 }
-.page-btn-box .page-btn:focus{
-	outline: 5px auto #DCDCDC;
+.page-btn-box .page-btn:hover .page-btn-l,.page-btn-box .page-btn:hover .page-btn-r p{
+	color: #BD8A4C;
 }
 .page-btn-l{
 	width: auto;
@@ -3050,3 +3158,30 @@ button.title-info-btn:focus {
 /* ============================================================
 9. 新闻详情页 结束
 ============================================================== */
+.page01{
+	width: 100%;
+	height: atuo;
+	padding: 0.5rem 0 0.3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-top: 1px solid #DCDCDC;
+}
+.page-link{
+	cursor: pointer;
+	padding: 0.16rem 0.16rem;
+	font-size: 0.16rem;
+	line-height: 0;
+	display: flex;
+	align-items: center;
+	margin: 0 0.05rem;
+	color: #808080;
+	border-radius: 4px;
+}
+.page-link:hover,.page-link.active {
+	z-index: 2;
+	color: #fff;
+	text-decoration: none;
+	background-color: #C78D11;
+	border-color: #C78D11;
+}

@@ -99,19 +99,17 @@ $(function ($) {
             }
         }
     })
-	// 新闻动态 tab也切换
+	// 新闻动态 tab页切换
 	$('#newsDynamic div.tabs').find('a:eq(0)').addClass('current');
-	
+	$('#newsDynamic .tab-content').find('.tabs_item:eq(0)').addClass('current');
+
 	$('div.tabs a').click(function (g) { 
 		var tab = $('#newsDynamic .tabs'); 
 		var	index = $(this).index();
-		var tab_content = $('#newsDynamic .tab-content');
 		tab.find('a').removeClass('current');
 		$(this).addClass('current');
-		
-		tab_content.find('div.tabs_item').not('div.tabs_item:eq(' + index + ')').slideUp();
-		tab_content.find('div.tabs_item:eq(' + index + ')').slideDown();
-		
+		$('#newsDynamic .tabs_item').removeClass('current');
+        $('#newsDynamic .tab-content').find('div.tabs_item:eq(' + index + ')').addClass('current');
 		g.preventDefault();
 	});
 	
@@ -181,9 +179,13 @@ $(function ($) {
     });
 	// 关于我们
 	(function(){
-		// nav tab
-		// 初始化按钮样式
-		$('.aboutUs-info-navbox').find('a:eq(0)').addClass('active');
+        // 获取url 参数
+        var temData = new URLSearchParams(window.location.search);
+        var url_index =temData.get('id') - 1;
+		// 初始化按钮样式 开始
+		$('.aboutUs-info-navbox').find('a:eq('+ url_index +')').addClass('active');
+        $('.aboutUs-tab-centent .aboutUsTab_items').eq(url_index).fadeIn();
+		// 初始化按钮样式 结束
 		$('.aboutUs-info-navbox a').click(function(g){
 			$('.aboutUs-info-navbox a').removeClass('active');
 			$(this).addClass('active');
@@ -198,21 +200,21 @@ $(function ($) {
 		})
     })();
 	// 新闻中心
-	(function(){
-		// nav tab
-		// 初始化按钮样式
-		$('.news-info-navbox').find('a:eq(0)').addClass('active');
-		$('.news-info-navbox a').click(function(g){
-			$('.news-info-navbox a').removeClass('active');
-			$(this).addClass('active');
-			var	index = $(this).index();
-			$('.news-tab-centent .newsTab_items').fadeOut();
-			setTimeout(function(){
-				$('.news-tab-centent .newsTab_items').eq(index).fadeIn();
-			},500)
-			g.preventDefault();
-		})
-    })();
+	// (function(){
+	// 	// nav tab
+	// 	// 初始化按钮样式
+	// 	$('.news-info-navbox').find('a:eq(0)').addClass('active');
+	// 	$('.news-info-navbox a').click(function(g){
+	// 		$('.news-info-navbox a').removeClass('active');
+	// 		$(this).addClass('active');
+	// 		var	index = $(this).index();
+	// 		$('.news-tab-centent .newsTab_items').fadeOut();
+	// 		setTimeout(function(){
+	// 			$('.news-tab-centent .newsTab_items').eq(index).fadeIn();
+	// 		},500)
+	// 		g.preventDefault();
+	// 	})
+    // })();
 
     // 加入我们手风琴模式
 	(function(){
@@ -232,5 +234,41 @@ $(function ($) {
 			g.preventDefault();
 		})
 	})();
-	
+
+    // 法规左侧导航
+	function init() {
+		$('#sidebar-menu a').on('click', function(e) {
+			if($(this).parent().hasClass('submenu')) {
+				e.preventDefault();
+			}
+			if(!$(this).hasClass('subdrop')) {
+				$('ul', $(this).parents('ul:first')).slideUp(350);
+				$('a', $(this).parents('ul:first')).removeClass('subdrop');
+				$(this).next('ul').slideDown(350);
+				$(this).addClass('subdrop');
+			} else if($(this).hasClass('subdrop')) {
+				$(this).removeClass('subdrop');
+				$(this).next('ul').slideUp(350);
+			}
+		});
+        $('#sidebar-menu ul li a.active').parents('li:last').children('a:first').addClass('active').trigger('click');
+		$('#sidebar-menu ul li a.active').parents('li.submenu').children('a:first').addClass('active').trigger('click');
+    }
+	// Sidebar Initiate
+	init();
+    // 折叠、打开导航栏
+    $(document).on('click', '#sidebar-btn-i', function (e) {
+        var leftBox = $('.left-tree-b');
+        var $menuItem = $('#sidebar-menu a');
+        var formBox = $('.form-box');
+        if(!leftBox.hasClass('active')){
+            leftBox.addClass('active');
+            formBox.fadeOut();
+        }else{
+            leftBox.removeClass('active');
+            formBox.fadeIn();
+        }
+
+		return false;
+	});
 }(jQuery));
