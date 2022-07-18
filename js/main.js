@@ -270,5 +270,19 @@ $(function ($) {
         }
 
 		return false;
-	});
+    });
+    
+    // 浮窗客服
+    (function(){
+        var service_r = $('#service-r');
+        var closure_box = $('#closure-box');
+        var chatBox = $('.chatBox');
+        service_r.click(function(event){
+            chatBox.fadeIn(350);
+        });
+        closure_box.click(function(event){
+            chatBox.fadeOut(350);
+        });
+    })()
+
 }(jQuery));
