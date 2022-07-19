@@ -3247,3 +3247,50 @@ button.title-info-btn:focus {
 	background-color: #C78D11;
 	border-color: #C78D11;
 }
+.regulationsDetails-info-box {
+	width: 100%;
+	background: #fff;
+}
+.regulationsDetails-centent-box {
+	width: 100%;
+	padding: 0.2rem 1.6rem;
+	text-align: center;
+}
+.regulationsDetails-title-box>h2{
+	width: 100%;
+	line-height: 0.4rem;
+	height: auto;
+	text-align: center;
+	font-weight: normal;
+	background-color: #F8F8F8;
+	color: #222;
+	font-size: 0.23rem;
+	margin-bottom: 0.1rem;
+	padding: 0.1rem 0.2rem;
+}
+.regulationsDetails-title-box>h6{
+	width: 100%;
+	line-height: 0.35rem;
+	height: 0.35rem;
+	text-align: center;
+	font-weight: normal;
+	color: #888;
+	font-size: 0.14rem;
+	margin-bottom: 0.3rem;
+	border-bottom: 1px dashed #ccc;
+	background-color: #F8F8F8;
+}
+.regulationsDetails-title-box>h6 font {
+	margin-right: 0.25rem;
+	color: #8d5109;
+	font-size: 0.14rem;
+}
+.regulationsDetails-text{
+	width: 100%;
+	overflow: hidden;
+	line-height: 0.3rem;
+	overflow: hidden;
+	font-size: 0.16rem;
+	color: #666;
+	text-align: left;
+}
