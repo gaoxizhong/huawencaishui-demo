@@ -9,14 +9,14 @@ $(function ($) {
 
 
     //for scroll bottom to top js here
-    if ($('.totop').length) {
+    if ($('.service-box').length) {
         var scrollTrigger = 150, // px
             backToTop = function () {
                 var scrollTop = $(window).scrollTop();
                 if (scrollTop > scrollTrigger) {
-                    $('.totop').addClass('show');
+                    $('.service-box').addClass('show');
                 } else {
-                    $('.totop').removeClass('show');
+                    $('.service-box').removeClass('show');
                 }
             };
 
@@ -30,7 +30,7 @@ $(function ($) {
             }
         });
 
-        $('.totop').on('click', function (e) {
+        $('#totop').on('click', function (e) {
             e.preventDefault();
             $('html,body').animate({
                 scrollTop: 0
@@ -48,36 +48,36 @@ $(function ($) {
   var $mainSlider = $('.silder');
 
   $mainSlider.owlCarousel({
-  loop: true,
-  navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-  nav: true,
-  dots:false,
-  autoplay: true,
-  autoplayTimeout: 3000,
-  animateOut: 'fadeOut',
-  animateIn: 'fadeIn',
-  smartSpeed: 450,
-  responsive: {
-      0: {
-          items: 1,
-          nav:false
-      },
-      768: {
-          items: 1,
-          nav:false,
-      },
-      960: {
-          items: 1,
-          nav:false
-      },
-      1250: {
-          items: 1
-      },
-      1920: {
-          items: 1
-      }
-  }
-});
+    loop: true,
+    navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+    nav: true,
+    dots:false,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    animateOut: 'fadeOut',
+    animateIn: 'fadeIn',
+    smartSpeed: 450,
+    responsive: {
+        0: {
+            items: 1,
+            nav:false
+        },
+        768: {
+            items: 1,
+            nav:false,
+        },
+        960: {
+            items: 1,
+            nav:false
+        },
+        1250: {
+            items: 1
+        },
+        1920: {
+            items: 1
+        }
+    }
+    });
 
     // testimonialSlider
     $('.testimonialSlider').owlCarousel({
@@ -114,24 +114,29 @@ $(function ($) {
 	});
 	
 	
-	// 我们的服务 初始化 第一个 状态
-	$('.accordionbox-item').eq(0).stop().animate({width: '5.66rem'}, 'slow');
-	$('.accordionbox-item').hover(function() {
-		// 获取索引
-		var _index = $(this).index();
-		$(this).stop().animate({width: '5.66rem'}, 'slow')
-		$(this).siblings().stop().animate({width: '1.34rem'}, 'slow')
-		// $(this).addClass('curr').stop().animate({width: '5.66rem'}, 'slow')
-		// 	.siblings()
-		// 	.stop()
-		// 	.animate({
-		// 		width: '1.34rem'
-		// 	}, 'slow')
-		// 	.removeClass('curr');
-	}, function() {
-		//移出
-	
-	})
+    // 我们的服务 初始化 第一个 状态
+    (function(){
+        $('.accordionbox-item').eq(0).addClass('active');
+        $('.accordionbox-item').eq(0).stop().animate({width: '5.66rem'}, 'slow');
+        $('.accordionbox-item').hover(function() {
+            // 获取索引
+            var _index = $(this).index();
+            $(this).stop().animate({width: '5.66rem'}, 'slow');
+            $('.accordionbox-item').removeClass('active');
+            $(this).addClass('active');
+            $(this).siblings().stop().animate({width: '1.34rem'}, 'slow');
+            // $(this).addClass('curr').stop().animate({width: '5.66rem'}, 'slow')
+            // 	.siblings()
+            // 	.stop()
+            // 	.animate({
+            // 		width: '1.34rem'
+            // 	}, 'slow')
+            // 	.removeClass('curr');
+        }, function() {
+            //移出
+        
+        })
+    })()
 	 //我们的团队
 	$('#ourTeam-carousel').owlCarousel({
 		nav: true,
@@ -278,9 +283,16 @@ $(function ($) {
         var closure_box = $('#closure-box');
         var chatBox = $('.chatBox');
         service_r.click(function(event){
-            chatBox.fadeIn(350);
+            if(!chatBox.hasClass('active')){
+                chatBox.addClass('active');
+                chatBox.fadeIn(350);
+            }else{
+                chatBox.removeClass('active');
+                chatBox.fadeOut(350);
+            }
         });
         closure_box.click(function(event){
+            chatBox.removeClass('active');
             chatBox.fadeOut(350);
         });
     })()

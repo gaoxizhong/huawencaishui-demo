@@ -537,18 +537,29 @@ banner  结束
 	position: relative;
 	overflow: hidden;
 }
-/* .puAway-box>img{
+.puAway-box>img.puAway-bg-box{
 	width: 100%;
 	height: 100%;
-} */
+}
 .accordionbox-item .curr-bgbox {
 	flex: 1;
 	width: 0;
-    height: 100%;
+	height: 100%;
 	padding: 0.2rem 0;
 	text-align: center;
 	display: block;
+	position: relative;
+	overflow: hidden;
 }
+.accordionbox-item .curr-bgbox .icon-right-box{
+	width: 0.47rem;
+	height: 0.14rem;
+	position: absolute;
+	left: 50%;
+	bottom: 0.2rem;
+	transform: translateX(-50%);
+}
+
 .curr-imgbox{
 	width: 2.14rem;
 	height: 2.14rem;
@@ -576,16 +587,7 @@ banner  结束
 	overflow: hidden;
 }
 
-.layer{
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	background: rgba(140, 80, 8, 0.8);
-	height: 100%;
-}
+
 .layer-box{
 	width: 100%;
 	height: 100%;
@@ -595,22 +597,60 @@ banner  结束
 	text-align: center;
 	padding: 0.5rem 0;
 	box-sizing: border-box;
-	line-height: 4.52rem;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
 }
 .layer-box i{
-	display: block;
-	font-size: 0.4rem;
+	width: 0.54rem;
+	height:0.54rem;
+	text-align: center;
+	display: inline-block;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+.layer-box i img{
+	max-width: 100%;
+	max-height: 100%;
 }
 .layer-box p{
 	color:#fff;
 	/* display: inline-block; */
-	letter-spacing: 0.1rem;
+	letter-spacing: 0.08rem;
 	text-align: center;
 	/*文字竖排*/
 	writing-mode: vertical-lr;/*从左向右 从右向左是 writing-mode: vertical-rl;*/
 	writing-mode: tb-lr;/*IE浏览器的从左向右 从右向左是 writing-mode: tb-rl；*/
 	margin: 0 auto;
 	margin-top: 0.3rem;
+	font-size: 0.2rem;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+.accordionbox-item.active .layer-box{
+	line-height: 4.5rem;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+.accordionbox-item.active .layer-box i{
+	display: none;
+}
+.accordionbox-item.active .layer-box p{
+	display: inline-block;
+}
+.puAway-x-box{
+	width: 1px;
+	height: 0.38rem;
+	position: absolute;
+	left: 50%;
+	bottom: 0.5rem;
+	transform: translateX(-50%);
+}
+.accordionbox-item.active .puAway-x-box{
+	display: none;
 }
 /* ==============================================
 3.3 我们的服务 结束
@@ -739,9 +779,8 @@ banner  结束
 	padding-top: 20px;
 	box-sizing: border-box;
 	position: relative;
-	/* background: url(../img/givandtakenumberbg.jpg) no-repeat center; */
+	background: url(../img/index-bg-num.png) no-repeat center;
 	background-size: cover;
-	background: #000;
 }
 .dataNumber-box{
 	padding: 0 92px;
@@ -929,7 +968,12 @@ banner  结束
 新闻动态结束
 ================================================= */
 
-
+.index-bg-t{
+	width: 100%;
+	height: 4px;
+	background: url(../img/index-bg-t.png) no-repeat center;
+	background-size: 100% 100%;
+}
 /* ==============================================
 3.8 我们的团队 开始
 ================================================= */
@@ -945,8 +989,8 @@ banner  结束
 	width: 16rem;
 }
 .ourTeam-carousel .item {
-    display: block;
-    margin: 0 0.45rem;
+	display: block;
+	margin: 0 0.45rem;
 	padding: 0.2rem;
 	position: relative;
 	height: 5.9rem;
@@ -1048,7 +1092,9 @@ banner  结束
 	width: 100%;
 	height: 3.5rem;
 	padding: 0.8rem 0;
-	background-color: #333333;
+	background: url(../img/index-bg-footTop.png) no-repeat center;
+	background-size: 100% 100%;
+
 }
 .footerTop .sectionHeader{
 	text-align: center;
@@ -1314,6 +1360,11 @@ footer 结束
 	display: -ms-flexbox; /* IE 10 */
 	align-items: center;
 	justify-content: space-between;
+	display: none;
+	
+}
+.service-box.show {
+	display: block;
 }
 .service-box>div.service-item{
 	width: 2.2rem;
@@ -1323,16 +1374,30 @@ footer 结束
 	display: -moz-flex; /* Firefox 18+ */  
 	display: -ms-flexbox; /* IE 10 */
 	align-items: center;
+	justify-content: space-between;
+	-moz-justify-content: space-between;
+	-ms-justify-content: space-between;
 	border-top-left-radius: 10px;
 	color: #fff;
 	font-size: 0.16rem;
 	padding-left: 0.1rem;
 	cursor: pointer;
 }
-.service-box>div.service-item>img{
+.service-box>div.service-item img{
 	width: 0.36rem;
 	height: 0.36rem;
 	margin-right: 0.1rem;
+}
+.service-box>div.service-item a{
+	color: #fff;
+}
+.service-box>div.service-item a i{
+	padding: 0.12rem;
+	font-size: 0.36rem;
+	cursor: pointer;
+}
+.service-box>div.service-item i:hover{
+	color: #C35C08;
 }
 .service-box>div.service-item.service-l{
 	margin-right: 0.2rem;
@@ -2382,6 +2447,7 @@ button.title-info-btn:focus {
 
 .news-itemslist-box .news-itemslist>a .items-info-box{
 	padding: 0.22rem 0.34rem;
+	flex: 1;
 }
 .news-itemslist-box .items-info-title{
 	font-size: 0.21rem;
@@ -3293,4 +3359,53 @@ button.title-info-btn:focus {
 	font-size: 0.16rem;
 	color: #666;
 	text-align: left;
+}
+
+
+.company-joinbox-i .group-box{
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: -moz-flex;
+	display: -o-flex;
+	align-items: center;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	-moz-align-items: center;
+	-o-align-items: center;
+	margin-top: 0.2rem;
+	padding-left: 0.15rem;
+}
+.company-joinbox-i .group-box label{
+	width: auto;
+	font-size: 0.18rem;
+	font-family: PingFangSC-Semibold, PingFang SC;
+	color: #333333;
+	line-height: 0.25rem;
+	margin: 0;
+}
+.group-box .companyinput-box {
+	width: 1.2rem;
+	margin-left: 0.1rem;
+	height: 0.4rem;
+	background: #FFFFFF;
+}
+.group-box .companyinput-box input {
+	width: 100%;
+	height: 100%;
+	border: 1px solid #B5B5B5;
+	border-radius: 4px;
+	padding: 0.06rem 0.1rem;
+	line-height: 1;
+	font-size: 0.16rem;
+}
+.codeImg-box{
+	margin-left: 0.1rem;
+	width: 0.7rem;
+	height: 0.4rem;
+	margin-top: 0.2rem;
+}
+.codeImg-box>img{
+	width: 100%;
+	height: 100%;
 }
