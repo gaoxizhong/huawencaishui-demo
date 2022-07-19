@@ -568,13 +568,17 @@ banner  结束
 	margin: 0 auto;
 }
 .curr-bgbox i{
-	width: 0.56rem;
-	height: 0.56rem;
-	line-height: 0.56rem;
+	width: 0.54rem;
+	height: 0.54rem;
 	color: #fff;
 	text-align: center;
 	font-size: 0.38rem;
 	margin: 0.14rem auto 0.1rem;
+	display: inline-block;
+}
+.curr-bgbox i img{
+	max-width: 100%;
+	max-height: 100%;
 }
 .curr-bgbox p{
 	width: 100%;
@@ -761,13 +765,25 @@ banner  结束
 }
 .customer-bg-box{
 	width: 100%;
-	height: 6.9rem;
+	/* height: 6.9rem; */
+	display: flex;
+	flex-wrap: wrap;
 }
-.customer-bg-box>img{
+.customer-bg-box>div{
+	width: 20%;
+	padding: 0.15rem;
+}
+.customer-bg-box>div img.customer-bgimg{
 	width: 100%;
-	height: 100%;
+	height: 1.4rem;
+	cursor: pointer;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
 }
-
+.customer-bg-box>div img.customer-bgimg:hover{
+	transform: scale(1.1);
+}
 /* ==============================================
 3.5 我们的客户 结束
 ================================================= */
@@ -828,8 +844,8 @@ banner  结束
 	transform: translateY(-50%);
 }
 .rbox-item-box>i img{
-	width: 100%;
-	height: 100%;
+	max-width: 100%;
+	max-height: 100%;
 }
 /* ==============================================
 3.6 数字数据模块 结束
@@ -1666,7 +1682,7 @@ footer 结束
     align-items: center;
     -ms-align-items: center;
     padding: 0 0.5rem;
-    margin: 0.6rem 0;
+    margin: 0.6rem 0 0.66rem;
 }
 .culture-title-box>div:nth-of-type(1){
     border-right: 1px solid #DDDDDD;
