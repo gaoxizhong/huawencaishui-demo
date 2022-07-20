@@ -117,14 +117,14 @@ $(function ($) {
     // 我们的服务 初始化 第一个 状态
     (function(){
         $('.accordionbox-item').eq(0).addClass('active');
-        $('.accordionbox-item').eq(0).stop().animate({width: '5.66rem'}, 'slow');
+        $('.accordionbox-item').eq(0).stop().animate({width: '5.66rem'}, 'none');
         $('.accordionbox-item').hover(function() {
             // 获取索引
             var _index = $(this).index();
-            $(this).stop().animate({width: '5.66rem'}, 'slow');
+            $(this).stop().animate({width: '5.66rem'}, 'none');
             $('.accordionbox-item').removeClass('active');
             $(this).addClass('active');
-            $(this).siblings().stop().animate({width: '1.34rem'}, 'slow');
+            $(this).siblings().stop().animate({width: '1.34rem'}, 'none');
             // $(this).addClass('curr').stop().animate({width: '5.66rem'}, 'slow')
             // 	.siblings()
             // 	.stop()
@@ -279,10 +279,10 @@ $(function ($) {
     
     // 浮窗客服
     (function(){
-        var service_r = $('#service-r');
+        var consultNow = $('.consultNow');
         var closure_box = $('#closure-box');
         var chatBox = $('.chatBox');
-        service_r.click(function(event){
+        consultNow.click(function(event){
             if(!chatBox.hasClass('active')){
                 chatBox.addClass('active');
                 chatBox.fadeIn(350);
