@@ -49,7 +49,7 @@ $(function ($) {
 
   $mainSlider.owlCarousel({
     loop: true,
-    navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+    navText: ['<img src="./img/banner-left-1.png" alt="" class="banner-left"><img src="./img/banner-left-2.png" alt="" class="banner-left banner-left-2">', '<img src="./img/banner-right-1.png" alt="" class="banner-left"><img src="./img/banner-right-2.png" alt="" class="banner-left banner-left-2">'],
     nav: true,
     dots:false,
     autoplay: true,
