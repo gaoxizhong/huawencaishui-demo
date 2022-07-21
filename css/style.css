@@ -509,8 +509,9 @@ banner  结束
 	background: #fff;
 }
 .ourServe-more:hover{
+	background: #bd8a4c;
 	color: #fff;
-	opacity: 0.8;
+	border: none;
 }
 .our-serve-r-box{
 	height: 4.52rem;
@@ -1229,8 +1230,7 @@ banner  结束
 	color: #FFFFFF;
 	padding: 0.2rem 0;
 	line-height: 1;
-    display: inline-block;
-    color: #bd8a4c;
+	display: inline-block;
 }
 
 .footer-links ul li a{
@@ -2385,18 +2385,36 @@ button.title-info-btn:focus {
 	text-align: center;
 	width: 1.5rem;
 	margin: 0 0.9rem;
+	position: relative;
 }
 .company-lc-box>div.lc-box-items img{
 	width: 1.5rem;
 	height: 1.5rem;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 .company-lc-box>div.lc-box-items p{
-	margin-top: 0.36rem;
+	margin-top: 1.86rem;
 	font-size: 0.24rem;
 	font-family: PingFangSC-Regular, PingFang SC;
 	font-weight: 400;
 	color: #BD8A4C;
 	line-height: 0.33rem;
+}
+.company-lc-box>div.lc-box-items:hover img{
+	top: -0.2rem;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.company-lc-box>div.lc-box-items:hover p{
+	color: #fff;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 .joinUs-company-joinbox{
 	width: 100%;
