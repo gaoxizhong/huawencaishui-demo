@@ -303,6 +303,11 @@ $(function ($) {
             chatBox.removeClass('active');
             chatBox.fadeOut(350);
         });
+    })();
+
+    (function(){
+        var ourTeamList = $('#ourTeam-carousel .ourTeam-title-box');
+        console.log(ourTeamList)
     })()
 
 }(jQuery));
