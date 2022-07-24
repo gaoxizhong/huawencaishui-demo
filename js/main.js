@@ -307,7 +307,24 @@ $(function ($) {
 
     (function(){
         var ourTeamList = $('#ourTeam-carousel .ourTeam-title-box');
-        console.log(ourTeamList)
+        for(var i = 0; i < ourTeamList.length; i++){
+            var ourTeamP =  ourTeamList.eq(i).children('p');
+            var p_arr = [];
+            for(var j = 0; j< ourTeamP.length; j++){
+                var p_text = ourTeamP.eq(j)[0].innerHTML;
+                if(p_text.indexOf(',') != -1){
+                    var s1 = p_text.split(',');
+                    console.log(s1)
+                    for(var k = 0; k<s1.length;k++){
+                        if( k == 0 ){
+                            ourTeamP.eq(j)[0].innerHTML = s1[0];
+                        }else{
+                            ourTeamP.eq(j).after("<p>"+ s1[k] +"</p>")
+                        }
+                    }
+                }
+            }
+        }
     })()
 
 }(jQuery));
