@@ -2395,11 +2395,11 @@ button.title-info-btn:focus {
 	left: 0;
 }
 .company-lc-box>div.lc-box-items p{
+	color: #fff;
 	margin-top: 1.86rem;
 	font-size: 0.24rem;
 	font-family: PingFangSC-Regular, PingFang SC;
 	font-weight: 400;
-	color: #BD8A4C;
 	line-height: 0.33rem;
 }
 .company-lc-box>div.lc-box-items:hover img{
@@ -2410,7 +2410,7 @@ button.title-info-btn:focus {
 	transition: all 0.3s ease-in-out;
 }
 .company-lc-box>div.lc-box-items:hover p{
-	color: #fff;
+	color: #BD8A4C;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
