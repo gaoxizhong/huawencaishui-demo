@@ -1832,11 +1832,23 @@ footer 结束
 		display: -moz-flex; /* Firefox 18+ */  
 		display: -ms-flexbox; /* IE 10 */
 }
-.team-block-items1>img{
-    width: 8rem;
-    height: 4.82rem;
-}
 
+.items1-img{
+	width: 8rem;
+	height: 4.82rem;
+	overflow: hidden;
+}
+.items1-img>img{
+	width: 100%;
+	height:100%;
+}
+.items1-img:hover img{
+	transform: scale(1.2);
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
 .team-items1-info{
     flex: 1;
     padding-left: 1.26rem;
@@ -2033,17 +2045,16 @@ footer 结束
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
-.service-imgbox .imgbox-two:hover img.serviceImg.serviceImg-hover {
+.service-imgbox:hover .imgbox-two img.serviceImg.serviceImg-hover {
 	display: block;
 }
-.imgbox-one:hover img{
+.service-imgbox:hover .imgbox-one img{
 	transform: scale(1.2);
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
-
 
 
 
@@ -2312,10 +2323,83 @@ footer 结束
 .company-title-imgbox{
 	margin: 0 auto;
 }
-.company-title-imgbox>img{
+.company-title-imgbox>div.company-imgbox{
 	width: 6.8rem;
 	height: 6.8rem;
+	position: relative;
 }
+.company-imgbox>img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.company-imgbox1{
+	width: 3.4rem;
+	height: 0.3rem;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(0.15rem);
+	z-index: 2;
+	animation: imgbox1 8s infinite linear;
+  -webkit-transform-origin: top right;
+  -ms-transform-origin: top right;
+  transform-origin: top right;
+}
+@keyframes imgbox1 {
+  0%{
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+}
+.company-imgbox1>img{
+	width: 0.3rem;
+	height: 0.3rem;
+	position: absolute;
+	top: 0;
+	left: -0.15rem;
+}
+.company-imgbox2{
+	width: 2.84rem;
+	height: 0.3rem;
+	position: absolute;
+	top: 50%;
+	left: 0.56rem;
+	transform: translateY(0.15rem);
+	z-index: 3;
+	animation: imgbox2 8s infinite linear;
+  -webkit-transform-origin: top right;
+  -ms-transform-origin: top right;
+  transform-origin: top right;
+}
+@keyframes imgbox2 {
+  0%{
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+  }
+}
+.company-imgbox2>img{
+	width: 0.3rem;
+	height: 0.3rem;
+	position: absolute;
+	top: 0;
+	left: -0.15rem;
+}
+
 .company-title-info{
 	padding: 0.64rem 0;
 }
