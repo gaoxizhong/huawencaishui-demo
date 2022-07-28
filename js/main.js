@@ -180,7 +180,7 @@ $(function ($) {
         dots:false,
         autoplayTimeout: 3000,
         smartSpeed: 450,
-        items: 7
+        items: 6
     });
 	// 关于我们
 	(function(){
