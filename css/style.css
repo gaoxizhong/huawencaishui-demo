@@ -36,12 +36,13 @@ Front-end developer : Mamunur Rashid
 
 html,
 body {
-    margin: 0;
-    padding: 0;
-    font-weight: 400;
-    color: #333333;
-    font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+	font-weight: 400;
+	color: #333333;
+	font-family: 'Roboto', sans-serif;
 	font-size: 0.22rem;
+	overflow-x: hidden;
 }
 
 ul {
@@ -1806,24 +1807,63 @@ footer 结束
 		display: -ms-flexbox; /* IE 10 */
 }
 .composition-box>div{
-    flex: 1;
-    padding-right: 0.02rem;
+	height: 3.32rem;
+	flex: 1;
+	margin-right: 0.02rem;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
 }
 .composition-box>div:nth-of-type(4){
-    padding-right: 0;
+    margin-right: 0;
 }
-.composition-box>div img{
-    width: 100%;
-    height: 3.32rem;
+.composition-box>div img.compositionbg{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
 }
+.com-img1{
+	position: absolute;
+	bottom: 0.44rem;
+	left: 0.44rem;
+	z-index: 2;
+}
+.com-img1.active{
+	display: none;
+	z-index: 3;
+}
+.composition-p{
+	width: 100%;
+	font-size: 0.18rem;
+	color: #fff;
+	text-align: center;
+	position: absolute;
+	top: 0.44rem;
+	left: 0;
+	z-index: 2;
+}
+.composition-box>div:hover .com-img1.active{
+	display: block;
+}
+.composition-box>div:hover .compositionbg{
+	transform: scale(1.2);
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
 .t-60{
-    width: auto;
-    height: 0.6rem;
-    margin: 0 -1.5rem;
-    background: #F0F2F5;
+	width: auto;
+	height: 0.6rem;
+	margin: 0 -1.5rem;
+	background: #F0F2F5;
 }
 .team-block-box{
-    padding-top: 0.6rem;
+	padding-top: 0.6rem;
 }
 .team-block-items1{
     width: 100%;
@@ -1832,7 +1872,6 @@ footer 结束
 		display: -moz-flex; /* Firefox 18+ */  
 		display: -ms-flexbox; /* IE 10 */
 }
-
 .items1-img{
 	width: 8rem;
 	height: 4.82rem;
@@ -1849,6 +1888,7 @@ footer 结束
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
+
 .team-items1-info{
     flex: 1;
     padding-left: 1.26rem;
@@ -2055,6 +2095,7 @@ footer 结束
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
+
 
 
 
@@ -2947,10 +2988,37 @@ button.title-info-btn:focus {
 	height: 4.56rem;
 	border-radius: 8px;
 	overflow: hidden;
+	position: relative;
 }
 .rifht-img-box>img{
 	width: 100%;
 	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.rifht-btn{
+	width: 1.68rem;
+	height: 0.56rem;
+	background: linear-gradient(315deg, #FED6B1 0%, #FEC39C 100%);
+	background: -ms-linear-gradient(315deg, #FED6B1 0%, #FEC39C 100%);
+	background: -webkit-linear-gradient(315deg, #FED6B1 0%, #FEC39C 100%);
+	background: -moz-linear-gradient(315deg, #FED6B1 0%, #FEC39C 100%);
+	background: -o-linear-gradient(315deg, #FED6B1 0%, #FEC39C 100%);
+	box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.1000);
+	border-radius: 8px;
+	color: #fff;
+	font-size: 0.24rem;
+	text-align: center;
+	line-height: 0.56rem;
+	position: absolute;
+	bottom: 0.82rem;
+	left: 1.22rem;
+	z-index: 2;
+}
+.rifht-btn:hover{
+	color: #fff;
 }
 .rifht-input-box{
 	width: 4.9rem;
@@ -3661,4 +3729,70 @@ button.title-info-btn:focus {
 .codeImg-box>img{
 	width: 100%;
 	height: 100%;
+}
+
+
+/* ===================  7/27 =============== */
+.address-box{
+	margin-top: 0.5rem;
+	margin-left: -0.6rem;
+	margin-right: -0.6rem;
+	display: flex;
+	display: flex;
+	display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */  
+	display: -moz-flex; /* Firefox 18+ */  
+	display: -ms-flexbox; /* IE 10 */
+	flex-wrap: wrap;
+}
+.address-box>div{
+	width: 5.3rem;
+	height: 1.3rem;
+	background: #FFFFFF;
+	border: 1px solid #DCDCDC;
+	padding: 0.14rem 0.2rem;
+	margin:0.2rem;
+	color: #363E43;
+	cursor: pointer;
+}
+.address-box>div:hover{
+	border: 1px solid #BD8A4C;
+	background: #BD8A4C;
+	color: #fff;
+}
+.address-box>div:hover .address-title{
+	color: #fff;
+}
+.address-box>div:hover .address-title-x{
+	display: block;
+}
+.address-box>div .address-title{
+	font-size: 0.24rem;
+	font-family: PingFangSC-Semibold, PingFang SC;
+	font-weight: 600;
+	color: #333333;
+	line-height: 0.37rem;
+	display: flex;
+	align-items: center;
+}
+
+.address-title-x{
+	display: inline-block;
+	width: 0.36rem;
+	height: 1px;
+	background: #4C7EBD;
+	margin-left: 0.12rem;
+	display: none;
+}
+.address-box>div .address-add{
+	font-size: 0.18rem;
+	font-family: PingFangSC-Regular, PingFang SC;
+	font-weight: 400;
+	line-height: 0.25rem;
+	padding: 0.08rem 0;
+}
+.address-box>div .address-tel{
+	font-size: 0.18rem;
+	font-family: PingFangSC-Regular, PingFang SC;
+	font-weight: 400;
+	line-height: 0.25rem;
 }
