@@ -829,8 +829,12 @@ banner  结束
 .dataNumber-box{
 	padding: 0 92px;
 }
+.dataNumber-lbox{
+	display: flex;
+	align-items: center;
+}
 .dataNumber-lbox img{
-	width: 100%;
+	max-width: 100%;
 }
 .dataNumber-rbox{
 	text-align: right;
