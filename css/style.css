@@ -2377,17 +2377,14 @@ footer 结束
 	height: 100%;
 }
 .company-imgbox1{
-	width: 3.4rem;
-	height: 0.3rem;
+	width: 6.8rem;
+	height: 1px;
 	position: absolute;
 	top: 50%;
 	left: 0;
-	transform: translateY(0.15rem);
+	transform: translateY(-50%);
 	z-index: 2;
 	animation: imgbox1 8s infinite linear;
-  -webkit-transform-origin: top right;
-  -ms-transform-origin: top right;
-  transform-origin: top right;
 }
 @keyframes imgbox1 {
   0%{
@@ -2401,13 +2398,22 @@ footer 结束
     -webkit-transform: rotate(360deg);
   }
 }
-.company-imgbox1>img{
+.company-imgbox1>img.img1{
 	width: 0.3rem;
 	height: 0.3rem;
 	position: absolute;
-	top: 0;
+	top: -0.15rem;
 	left: -0.15rem;
 }
+.company-imgbox1>img.img2{
+	width: 0.3rem;
+	height: 0.3rem;
+	position: absolute;
+	top: -0.15rem;
+	right: 0.41rem;
+}
+
+
 .company-imgbox2{
 	width: 2.84rem;
 	height: 0.3rem;
