@@ -726,7 +726,7 @@ banner  结束
 	padding: 0 6px;
 }
 .advantage-item>.ad-box{
-	display: inline-block;
+	display: inline-block !important;
 	width: 100%;
 	height: 4rem;
 	text-align: center;
@@ -1848,6 +1848,9 @@ footer 结束
 	top: 0.44rem;
 	left: 0;
 	z-index: 2;
+}
+.composition-box>div:hover .com-img1{
+	display: none;
 }
 .composition-box>div:hover .com-img1.active{
 	display: block;
