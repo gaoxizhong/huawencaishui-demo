@@ -2059,7 +2059,7 @@ footer 结束
 .service-bg-box>img{
     width: 100%;
 }
-.service-bg-box>div.service-imgbox{
+.service-bg-box>a.service-imgbox{
 	width: 100%;
 	height: 4.2rem;
 	display: flex;
@@ -2068,13 +2068,13 @@ footer 结束
 	display: -ms-flexbox; /* IE 10 */
 }
 
-.service-bg-box>div.service-imgbox>div{
+.service-bg-box>a.service-imgbox>div{
 	flex: 1;
 	height: 100%;
 	position: relative;
 	overflow: hidden;
 }
-.service-bg-box>div.service-imgbox>div img{
+.service-bg-box>a.service-imgbox>div img{
 	width: 100%;
 	height: 100%;
 	cursor: pointer;
@@ -3809,3 +3809,192 @@ button.title-info-btn:focus {
 	font-weight: 400;
 	line-height: 0.25rem;
 }
+
+/* ======================  会所介绍页 开始 ↓ ======================== */
+.clubIntroduce {
+	width: 100%;
+	height: 5.5rem;
+	background-size: cover;
+	position: relative;
+	padding-top: 1.6rem;
+}
+.clubIntroduce.clubIntroduce-acc{
+	background: url(../img/service/acc/club-bg.png) no-repeat center;
+}
+.clubIntroduce.clubIntroduce-ass{
+	background: url(../img/service/ass/club-bg.png) no-repeat center;
+}
+.clubIntroduce.clubIntroduce-tax{
+	background: url(../img/service/tax/club-bg.png) no-repeat center;
+}
+.clubIntroduce.clubIntroduce-cost{
+	background: url(../img/service/cost/club-bg.png) no-repeat center;
+}
+.clubIntroduce .bcoverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+.clubIntroduce .insuronbreadcrumb-info-box{
+	width: 100%;
+	height: 100%;
+}
+.clubIntroduce .sectionHeader{
+	text-align: center;
+}
+.clubIntroduce .sectionHeader h2{
+	font-size: 0.42rem;
+	color: #fff;
+	font-family: PingFangSC-Regular, PingFang SC;
+	font-weight: 400;
+	line-height: none;
+	margin-bottom: 0;
+}
+.clubIntroduce .sectionHeader .sectionHeader-p{
+	font-size: 0.2rem;
+	color: #fff;
+	font-family: PingFangSC-Regular, PingFang SC;
+	font-weight: 400;
+	margin-top: 0.06rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.clubIntroduce .sectionHeader .sectionHeader-p .line-h{
+	width: 0.72rem;
+	height: 1px;
+	background: #FFFFFF;
+}
+.clubIntroduce .sectionHeader .sectionHeader-p span{
+	font-size: 0.24rem;
+	font-family: PingFangSC-Regular, PingFang SC;
+	font-weight: 400;
+	color: #FFFFFF;
+	padding: 0 0.1rem;
+}
+
+
+.clubIntroduce .footer-consult-btn{
+	display: inline-block;
+	width: 2.06rem;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	text-align: center;
+	border: 1px solid #fff;
+	color: #fff;
+	margin-top: 1.6rem;
+}
+.clubIntroduce .footer-consult-btn:hover{
+	background: #bd8a4c;
+	border: none;
+}
+/* --------------------  内部导航开始 --------------- */
+.clubIntroduce-info{
+	width: 100%;
+	background: #fff;
+}
+.clubIntroduce-info .clubIntroduce-navbox{
+	display: flex;
+	display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */  
+	display: -moz-flex; /* Firefox 18+ */  
+	display: -ms-flexbox; /* IE 10 */
+	align-items: center;
+	justify-content: center;
+	border-bottom: 1px solid #d3d3d3;
+}
+.clubIntroduce-info .clubIntroduce-navbox>a{
+	display: inline-block;
+	font-size: 0.18rem;
+	font-family: PingFangSC-Medium, PingFang SC;
+	font-weight: 500;
+	color: #333333;
+	line-height: 0.25rem;
+	width: 2.21rem;
+	height: 0.75rem;
+	display: flex;
+	display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */  
+	display: -moz-flex; /* Firefox 18+ */  
+	display: -ms-flexbox; /* IE 10 */
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+.clubIntroduce-info .clubIntroduce-navbox>a::before{
+	content: '';
+	width: 1px;
+	height: 0.18rem;
+	background: #d3d3d3;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+}
+.clubIntroduce-info .clubIntroduce-navbox>a:last-child::before{
+	width:0;
+}
+.clubIntroduce-info .clubIntroduce-navbox>a:hover,
+.clubIntroduce-info .clubIntroduce-navbox>a.active,
+.clubIntroduce-info .clubIntroduce-navbox>a:hover::before,
+.clubIntroduce-info .clubIntroduce-navbox>a.active::before{
+	background: #bd8a4c;
+	color: #fff;
+}
+	/* --------------------  内部导航结束 --------------- */
+.clubIntroduce-bg-box{
+	width: 16.16rem;
+	height: auto;
+	margin: 0 auto;
+	margin-top: 1rem;
+	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1000);
+}
+.clubIntroduce-bg-box>img{
+    width: 100%;
+}
+.clubIntroduce-bg-box>a.clubIntroduce-imgbox{
+	width: 100%;
+	height: 3rem;
+	display: flex;
+	display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */  
+	display: -moz-flex; /* Firefox 18+ */  
+	display: -ms-flexbox; /* IE 10 */
+}
+
+.clubIntroduce-bg-box>a.clubIntroduce-imgbox>div{
+	flex: 1;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.clubIntroduce-bg-box>a.clubIntroduce-imgbox>div img{
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+.clubIntroduce-imgbox .imgbox-two img.serviceImg{
+	position: absolute;
+	right: 0;
+	z-index: 100;
+}
+.clubIntroduce-imgbox .imgbox-two img.serviceImg.serviceImg-hover{
+	z-index: 200;
+	display: none;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.clubIntroduce-imgbox:hover .imgbox-two img.serviceImg.serviceImg-hover {
+	display: block;
+}
+.clubIntroduce-imgbox:hover .imgbox-one img{
+	transform: scale(1.2);
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+/* ======================  会所介绍页 介绍 ↑ ======================== */
