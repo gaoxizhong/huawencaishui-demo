@@ -3938,6 +3938,9 @@ button.title-info-btn:focus {
 	background: #bd8a4c;
 	color: #fff;
 }
+
+
+
 	/* --------------------  内部导航结束 --------------- */
 .clubIntroduce-bg-box{
 	width: 16.16rem;
@@ -4202,3 +4205,34 @@ button.title-info-btn:focus {
 	/* ===========  税务介绍 ↑ ============ */
 
 /* ======================  会所介绍页 介绍 ↑ ======================== */
+
+.seach-box{
+	margin-top: 0.2rem;
+	width: 4.1rem;
+	height: 0.4rem;
+	background: #FFFFFF;
+	border-radius: 6px;
+	border: 1px solid #DCDCDC;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 0.12rem;
+	font-size: 0.16rem;
+}
+.seach-box input{
+	flex: 1;
+	border: none;
+}
+.seach-box input:focus{
+	outline: 0px dotted;
+	outline: 0px auto -webkit-focus-ring-color;
+}
+.seach-box button{
+	width: 0.28rem;
+	height: 0.28rem;
+	border: none;
+}
+.seach-box button:focus{
+	outline: 0px dotted;
+	outline: 0px auto -webkit-focus-ring-color;
+}
