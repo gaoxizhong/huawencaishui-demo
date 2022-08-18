@@ -1665,7 +1665,6 @@ footer 结束
 .huawen-title-box{
 	width: 100%;
 	text-align: center;
-    margin-top: 0.5rem;
 }
 
 .huawen-title-box .titleText-t{
@@ -3946,7 +3945,7 @@ button.title-info-btn:focus {
 	width: 16.16rem;
 	height: auto;
 	margin: 0 auto;
-	margin-top: 1rem;
+	margin-top: 0.6rem;
 	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1000);
 }
 .clubIntroduce-bg-box>img{
@@ -3997,15 +3996,17 @@ button.title-info-btn:focus {
 }
 	/* ============  税务介绍 ↓ ============ */
 .customer-ys{
+	height: 5.81rem;
 	padding: 2.01rem 1.5rem 0.4rem;
 	box-sizing: border-box;
 	position: relative;
-	background-size: cover;
+	background-size: 100% 100% !important;
 }
 .ys-box{
 	display: flex;
 	margin: 0 -0.13rem;
-
+	align-items: center;
+	justify-content: center;
 }
 .ys-item-box{
 	width: 3.04rem;
@@ -4115,27 +4116,12 @@ button.title-info-btn:focus {
 	width: 2.7rem;
 	height: 5.98rem;
 }
-
-
-
-
 .workflow-box>div div.workflow-imgbox .culture-p.culture-p-1{
-	z-index: 200;
 	display: none;
-	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
 }
-.workflow-box>div:hover .culture-p{
-	display: none;
-	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-}
-.workflow-box>div:hover .culture-p.culture-p-1{
+.workflow-box>div:hover div.workflow-imgbox .culture-p.culture-p-1{
 	display: block;
+	z-index: 200;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
@@ -4145,7 +4131,8 @@ button.title-info-btn:focus {
 	padding: 2.08rem 0 0.58rem;
 	box-sizing: border-box;
 	position: relative;
-	background-size: cover;
+	background-size: 100% 100% !important;
+	height: 6.18rem;
 }
 .fd-box{
 	width: 100%;
@@ -4199,9 +4186,109 @@ button.title-info-btn:focus {
 }
 .business-customer{
 	padding-bottom: 0.4rem;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
 	box-sizing: border-box;
 }
+.business-box{
+	width: 100%;
+	margin-top: 0.3rem;
+}
+.business-box>div{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 0.3rem;
+}
+.business-item1-box .item1-left-bgbox{
+	width: 7.42rem;
+	height: 2.7rem;
+	overflow: hidden;
+}
+.business-item1-box .item1-left-bgbox img{
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+}
+.business-item1-box .item1-right-bgbox{
+	margin-left: 0.3rem;
+	width: 8.2rem;
+	height: 2.7rem;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+	overflow: hidden;
+}
+.business-item1-box .item1-right-bgbox img{
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+}
 
+.business-item2-box .item2-left-bgbox{
+	width: 7.42rem;
+	height: 2.7rem;
+	overflow: hidden;
+}
+.business-item2-box .item2-left-bgbox>img{
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+}
+.business-item2-box .item2-m-bgbox{
+	width: 2.34rem;
+	height: 2.7rem;
+	overflow: hidden;
+}
+.business-item2-box .item2-m-bgbox>img{
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+}
+.business-item2-box .item2-right-bgbox{
+	width: 5.9rem;
+	height: 2.7rem;
+	margin-left: 0.26rem;
+	overflow: hidden;
+	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+}
+.business-item2-box .item2-right-bgbox>img{
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+}
+.business-item3-box .item3-left-bgbox{
+	width: 3.7rem;
+	height: 2.7rem;
+	overflow: hidden;
+}
+.business-item3-box .item3-left-bgbox>img{
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+}
+.business-item3-box .item3-m-bgbox{
+	width: 6.06rem;
+	height: 2.7rem;
+	overflow: hidden;
+	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+}
+.business-item3-box .item3-m-bgbox>img{
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+}
+.business-item3-box .item3-right-bgbox{
+	margin-left: 0.26rem;
+	width: 5.9rem;
+	height: 2.7rem;
+	overflow: hidden;
+}
+.business-item3-box .item3-right-bgbox>img{
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+}
 	/* ===========  税务介绍 ↑ ============ */
 
 /* ======================  会所介绍页 介绍 ↑ ======================== */
