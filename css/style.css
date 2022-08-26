@@ -705,7 +705,7 @@ banner  结束
 	justify-content: space-between;
 }
 .section-title-box .section-l-title{
-    width: 2.1rem;
+    width: auto;
     height: 0.59rem;
     font-size: 0.42rem;
     font-family: PingFangSC-Regular, PingFang SC;
