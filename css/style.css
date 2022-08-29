@@ -821,65 +821,70 @@ banner  结束
 3.6 数字数据模块 开始
 ================================================= */
 .dataNumber{
-	padding-top: 20px;
+	padding: 0 1.5rem;
 	box-sizing: border-box;
 	position: relative;
+	height: 6.8rem;
 	background: url(../img/index-bg-num.png) no-repeat center;
-	background-size: cover;
+	background-size: 100% 100%;
+}
+.dataNumber>div{
+	height: 100%;
 }
 .dataNumber-box{
-	padding: 0 92px;
+	height: 100%;
+	padding: 0 0.2rem;
 }
 .dataNumber-lbox{
+	padding: 0.2rem 0;
+	width: 8.08rem;
 	display: flex;
 	align-items: center;
 }
-.dataNumber-lbox img{
+/* .dataNumber-lbox img{
 	max-width: 100%;
+} */
+.dataNumber-lbox .vido-box1{
+	width: 100%;
+	height: 100%;
+	margin-top: 0;
 }
+
 .dataNumber-rbox{
-	text-align: right;
-	padding: 20px 0;
+	flex: 1;
+	display: flex;
 }
 .dataNumber-rbox-item{
-	margin: 20px 0;
-	text-align: right;
+	flex: 1;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
-.rbox-item-box{
-	display: inline-block;
-	width: 280px;
-	padding: 20px;
-	box-sizing: border-box;
-	border-radius: 8px;
-	border: 1px solid #4e5255;
-	color: #fff;
-	line-height: 1;
-	position: relative;
+.dataNumber-rbox-item:nth-of-type(1),.dataNumber-rbox-item:nth-of-type(3){
+	background: linear-gradient(180deg, rgba(250,192,61,0) 0%, rgba(149,97,52,0.6) 100%);
 }
-.rbox-item-box>.rbox-item-namber{
-	float: left;
+.dataNumber-rbox-item .i-img{
+	width: 0.7rem;
+	height: 0.7rem;
 }
-.rbox-item-box>.rbox-item-namber p{
-	text-align: left;
-	color: #fff;
+.dataNumber-rbox-item .rbox-item-title{
+	font-size: 0.18rem;
+	font-family: PingFangSC-Medium, PingFang SC;
+	font-weight: 500;
+	color: #FFFFFF;
+	line-height: 0.25rem;
+	margin-top: 0.3rem;
 }
-.item-namber{
-	font-size: 34px;
+.dataNumber-rbox-item .item-namber{
+	font-size: 0.5rem;
 	font-family: Helvetica-Condensed-Bold, Helvetica-Condensed;
 	font-weight: bold;
+	color: #FFFFFF;
+	line-height: 0.6rem;
 }
-.rbox-item-box>i{
-	width: 0.72rem;
-	height: 0.72rem;
-	position: absolute;
-	right: 20px;
-	top: 50%;
-	transform: translateY(-50%);
-}
-.rbox-item-box>i img{
-	max-width: 100%;
-	max-height: 100%;
-}
+
 /* ==============================================
 3.6 数字数据模块 结束
 ================================================= */
