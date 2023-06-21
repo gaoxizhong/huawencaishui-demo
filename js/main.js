@@ -164,6 +164,35 @@ $(function ($) {
 		    }
 		}
 	});
+
+    //导师专题
+	$('#tutorTopic-carousel').owlCarousel({
+		nav: true,
+		navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+		dots:true,
+		autoplayTimeout: 3000,
+		smartSpeed: 450,
+		responsive: {
+		    0: {
+		        items: 2,
+		        nav:false
+		    },
+		    768: {
+		        items: 2,
+		        nav:false,
+		    },
+		    960: {
+		        items: 4,
+		    },
+		    1250: {
+		        items: 4
+		    },
+		    1920: {
+		        items: 4
+		    }
+		},
+        scrollPage:true,
+	});
     //税种
     $('#tax-carousel').owlCarousel({
         nav: false,

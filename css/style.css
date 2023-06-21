@@ -4328,3 +4328,139 @@ button.title-info-btn:focus {
 	outline: 0px dotted;
 	outline: 0px auto -webkit-focus-ring-color;
 }
+
+
+
+/* ==============================================
+导师专题 开始
+================================================= */
+.tutorTopic{
+	padding: 0.22rem 0 0.4rem;
+	box-sizing: border-box;
+	background: url(../img/style2_2.png) no-repeat center;
+	background-size: cover;
+}
+.tutorTopic .section-inner{
+	padding: 0 1.5rem;
+}
+.tutorTopic .tutorTopic-carousel {
+	width: 16rem;
+}
+.tutorTopic .tutorTopic-carousel .item {
+	display: block;
+	margin: 0 0.45rem;
+	position: relative;
+	height: 3.26rem;
+	padding: 0 0.24rem;
+	background: #fff;
+	box-shadow: 0 1px 2px 0 rgb(0 0 0 / 1%), 0 6px 12px 0 rgb(0 0 0 / 6%);
+	border-radius: 4px;
+	margin-top: 0.7rem;
+}
+.tutorTopic .tutorTopic-carousel .item img.tutorTopic-img{
+	position: absolute;
+	top: -0.7rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: 50%;
+}
+.tutorTopic-title-box{
+	font-size: 0.14rem;
+	font-family: PingFangSC-Regular, PingFang SC;
+	font-weight: 400;
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+}
+.tutorTopic-title-box .tutorTopic-name{
+	margin-top: 0.9rem;
+	color: #353535;
+	font-weight: 600;
+	font-size: 0.18rem;
+	overflow: hidden;
+	width: 100%;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	text-align: center;
+}
+.tutorTopic-title-box .tutorTopic-text{
+	width: 100%;
+	font-size: 0.15rem;
+	color: #666;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	text-align: center;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+.tutorTopic-carousel .item .split-line{
+	width: 100%;
+	height: 1px;
+	margin-top: 0.15rem;
+	background-color: #efefef;
+}
+.tutorTopic-carousel .item .tutorTopic-p-box{
+	padding-top: 0.1rem;
+}
+.tutorTopic-carousel .item .tutorTopic-p-box p{
+	font-size: 0.13rem;
+	line-height: 16px;
+	color: #353535;
+	text-align: justify;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	cursor: pointer;
+}
+.tutorTopic .tutorTopic-carousel .owl-nav div {
+	background-color: transparent;
+	border: 2px solid rgba(255, 255, 255, .2);
+	font-size: 0.4rem;
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 50%;
+	left: -0.25rem;
+	line-height: 0.5rem;
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	color: #d3d3d3;
+	background: #c1c1c1;
+	text-align: center;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+.tutorTopic .tutorTopic-carousel .owl-nav div:hover {
+	background-color: #C78D11;
+	color: #fff;
+}
+.tutorTopic .tutorTopic-carousel .owl-nav .owl-next {
+	right: -0.25rem;
+	left: auto;
+}
+
+
+.tutorTopic .tutorTopic-carousel .owl-controls .owl-nav .owl-prev,
+.tutorTopic .tutorTopic-carousel .owl-controls .owl-nav .owl-next {
+	opacity: 0;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+.tutorTopic .tutorTopic-carousel:hover .owl-controls .owl-nav .owl-prev {
+	opacity: 1;
+}
+
+.tutorTopic .tutorTopic-carousel:hover .owl-controls .owl-nav .owl-next {
+	opacity: 1;
+}
+/* ==============================================
+导师专题 结束
+================================================= */
